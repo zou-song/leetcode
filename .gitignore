@@ -1,0 +1,4 @@
+**/*.o
+**/lc
+src/**/Makefile
+src/**/lc.h

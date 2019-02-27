@@ -16,7 +16,7 @@ endif
 
 all : $(BINS)
 
-ls : $(OBJS)
+lc : $(OBJS)
 	$(LD) $(LD_FLAGS) -o $@ $(OBJS)
 
 %.o : %.cpp $(HEADS)

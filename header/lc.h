@@ -25,6 +25,10 @@ void trimRightTrailingSpaces(string &input) {
     }).base(), input.end());
 }
 
+int stringToInteger(string input) {
+    return stoi(input);
+}
+
 vector<int> stringToIntegerVector(string input) {
     vector<int> output;
     trimLeftTrailingSpaces(input);

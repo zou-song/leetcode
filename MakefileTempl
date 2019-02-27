@@ -1,0 +1,28 @@
+DEBUG_VERSION = true
+CC = g++ 
+LD = g++
+INCLUDES = -I.
+CXXFLAGS = -Wall -m64 -Wno-deprecated -std=c++11 -rdynamic
+LDFLAGS =
+HEADS = $(shell find ./ -name "*.h")
+SRC = $(shell find ./ -name "*.cpp")
+OBJS = $(SRC:%.cpp=%.o)
+BINS = lc
+
+ifeq ($(DEBUG_VERSION), true)
+	CXXFLAGS += -g -ggdb -O0
+	LDFLAGS += -g -ggdb -O0
+endif
+
+all : $(BINS)
+
+ls : $(OBJS)
+	$(LD) $(LD_FLAGS) -o $@ $(OBJS)
+
+%.o : %.cpp $(HEADS)
+	$(CC) -c $(CXXFLAGS) $(INCLUDES) $< -o $@
+
+.PHONY: clean
+
+clean:
+	rm -rf $(OBJS); rm -rf $(BINS)

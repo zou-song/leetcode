@@ -11,3 +11,4 @@ To build:
 | No.  | Title  | Difficulty  |
 |:----:|:------:|:-----------:|
 | 26  |[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)| easy|
+| 13  |[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)| easy  |

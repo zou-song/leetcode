@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <assert.h>
 #include <iostream>
+#include <map>
 #include <numeric>
 #include <sstream>
 #include <string>

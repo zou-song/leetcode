@@ -17,4 +17,5 @@ To build:
 | 13  |[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)| easy  |
 | 26  |[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)| easy|
 | 27  |[Remove Element](https://leetcode.com/problems/remove-element/)|  easy  |
+| 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| easy  |

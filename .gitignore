@@ -2,3 +2,4 @@
 **/lc
 src/**/Makefile
 src/**/lc.h
+*.swp

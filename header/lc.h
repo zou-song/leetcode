@@ -87,4 +87,8 @@ string stringToString(string input) {
     return result;
 }
 
+string boolToString(bool input) {
+    return input ? "True" : "False";
+}
+
 #endif

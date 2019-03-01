@@ -16,6 +16,7 @@ To build:
 |:----:|:------:|:-----------:|
 | 12  |[Integer to Roman](https://leetcode.com/problems/integer-to-roman/)| medium  |
 | 13  |[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)| easy  |
+| 22  |[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| medium  |
 | 24  |[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)| medium  |
 | 26  |[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)| easy|
 | 27  |[Remove Element](https://leetcode.com/problems/remove-element/)|  easy  |

@@ -1,3 +1,5 @@
+#include "lc.h"
+
 class Solution {
 public:
     void func(string str, int ln, int rn, int num, vector<string> &vec)

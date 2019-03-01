@@ -26,9 +26,9 @@ public:
             return 0;
         vector<int> next;
         getNext(needle, next);
-        size_t hay_len = haystack.size();
-        size_t ndl_len = needle.size();
-        size_t i = 0, j = 0;
+        int hay_len = haystack.size();
+        int ndl_len = needle.size();
+        int i = 0, j = 0;
         while (i < hay_len && j < ndl_len)
         {
             if (j < 0)

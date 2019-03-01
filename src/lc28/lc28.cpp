@@ -8,7 +8,7 @@ public:
             return;
         size_t len = str.size();
         next.resize(len);
-        next[0] = -1;   //-1 means haystack and needle should both forward a step
+        next[0] = -1;   //-1 means haystack should move forward and needle back to begining
         for (size_t i = 1; i < len; ++i)
         {
             int k = next[i - 1];

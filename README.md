@@ -22,6 +22,7 @@ To build:
 | 26  |[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)| Easy|
 | 27  |[Remove Element](https://leetcode.com/problems/remove-element/)|  Easy  |
 | 28  |[Implement strStr()](https://leetcode.com/problems/implement-strstr/)|  Easy  |
+| 35  |[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

@@ -23,6 +23,7 @@ To build:
 | 27  |[Remove Element](https://leetcode.com/problems/remove-element/)|  Easy  |
 | 28  |[Implement strStr()](https://leetcode.com/problems/implement-strstr/)|  Easy  |
 | 31  |[Next Permutation](https://leetcode.com/problems/next-permutation/)|  Medium  |
+| 32  |[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)|  Hard  |
 | 35  |[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |

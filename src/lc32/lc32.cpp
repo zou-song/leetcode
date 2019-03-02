@@ -15,7 +15,7 @@ public:
             else
             {
                 int j = i - 1- tmp[i - 1];
-                if (s[j] == '(')
+                if (j >= 0 && s[j] == '(')
                 {
                     if (j - 1 < 0)
                         tmp[i] = 2 + tmp[i - 1];

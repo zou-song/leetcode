@@ -37,7 +37,6 @@ public:
     vector<int> searchRange(vector<int>& nums, int target) {
         int len = nums.size();
         int beg = 0, end = len - 1;
-        int lb = 0, ub = 0;
         while (beg <= end)
         {
             if (nums[beg] == target && nums[end] == target)

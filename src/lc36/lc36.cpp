@@ -1,4 +1,4 @@
-#include 'lc.h'
+#include "lc.h"
 
 class Solution {
 public:
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 								{'.','6','.','.','.','.','2','8','.'}, {'.','.','.','4','1','9','.','.','5'}, {'.','.','.','.','8','.','.','7','9'}};
 	bool expected = true;
 	bool output = Solution().isValidSudoku(input);
-	cout << "expected: " << expected << end;
+	cout << "expected: " << expected << endl;
 	cout << "output: " << output << endl;
 	return 0;
 }

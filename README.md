@@ -29,6 +29,7 @@ To build:
 | 35  |[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|  Easy  |
 | 36  |[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|  Medium  |
 | 38  |[Count and Say](https://leetcode.com/problems/count-and-say/)|  Easy  |
+| 39  |[Combination Sum](https://leetcode.com/problems/combination-sum/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

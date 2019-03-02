@@ -18,7 +18,7 @@ public:
                     k++;
                 }
                 int cnt = k - j;
-                tmp = tmp + to_string(cnt) + to_string(str[j]);
+                tmp = tmp + to_string(cnt) + str[j];
                 j = k;
             }
             str = tmp;

@@ -4,12 +4,13 @@ class Solution {
 public:
     void permute(vector<int>& nums, int idx, vector<vector<int>>& ret, vector<int> &vec)
     {
-        if (idx >= nums.size())
+		int len = nums.size();
+        if (idx >= len)
         {
             ret.push_back(nums);
             return;
         }
-        for (int i = idx; i < nums.size(); ++i)
+        for (int i = idx; i < len; ++i)
         {
             swap(nums[i], nums[idx]);
             vec.push_back(nums[i]);
@@ -36,13 +37,7 @@ int main(int argc, char *argv[])
         trimRightTrailingSpaces(line);
         vector<int> nums = stringToIntegerVector(line);
         vector<vector<int>> output = Solution().permute(nums);
-        cout << "[\n";
-        for (auto &vec : output)
-        {
-            string str = integerVectorToString(vec);
-            cout << str << endl;
-        }
-        cout << "]\n";
+		cout << intergerVectorVectorToString(output) << endl;
     }
     return 0;
 }

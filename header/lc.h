@@ -64,6 +64,23 @@ string integerVectorToString(vector<int> list, int length = -1) {
     return "[" + result.substr(0, result.length() - 2) + "]";
 }
 
+string intergerVectorVectorToString(const vector<vector<int>> &vec2)
+{
+	if (vec2.empty())
+		return "[]";
+	string ret;
+	for (auto &v : vec2)
+	{
+		string str;
+		for (auto num : v)
+		{
+			str = str + to_string(num) + ", ";
+		}
+		ret = ret + "[" + str.substr(0, str.length() - 2) + "], ";
+	}
+	return "[" + ret.substr(0, ret.length() - 2) + "]";
+}
+
 string stringToString(string input) {
     assert(input.length() >= 2);
     string result;

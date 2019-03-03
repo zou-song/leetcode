@@ -11,7 +11,7 @@ public:
             {
                 ++j;
             }
-            else if (nums[nums[j] - 1] = nums[j])
+            else if (nums[nums[j] - 1] == nums[j])
             {
                 ++j;
             }

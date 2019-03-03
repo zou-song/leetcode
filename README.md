@@ -34,6 +34,7 @@ To build:
 | 41  |[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|  Hard  |
 | 43  |[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|  Medium  |
 | 45  |[Jump Game II](https://leetcode.com/problems/jump-game-ii/)|  Hard  |
+| 46  |[Permutations](https://leetcode.com/problems/permutations/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

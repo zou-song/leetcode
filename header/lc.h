@@ -47,6 +47,25 @@ vector<int> stringToIntegerVector(string input) {
     return output;
 }
 
+vector<string> stringToStringVector(string input)
+{
+    vector<string> output;
+    trimLeftTrailingSpaces(input);
+    trimRightTrailingSpaces(input);
+    input = input.substr(1, input.length() - 2);
+    stringstream ss;
+    ss.str(input);
+    string item;
+    char delim = ',';
+    while (getline(ss, item, delim))
+    {
+        trimLeftTrailingSpaces(item);
+        trimRightTrailingSpaces(item);
+        output.push_back(item.substr(1, item.length() -2));
+    }
+    return output;
+}
+
 string integerVectorToString(vector<int> list, int length = -1) {
     if (length == -1) {
         length = list.size();
@@ -80,6 +99,9 @@ string intergerVectorVectorToString(const vector<vector<int>> &vec2)
 	}
 	return "[" + ret.substr(0, ret.length() - 2) + "]";
 }
+
+string stringVectorToString(const vector<string>& vec)
+{}
 
 vector<vector<int>> stringToIntegerVectorVector(string input)
 {

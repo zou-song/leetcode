@@ -10,10 +10,12 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
+#include <memory.h>
 
+//just for convenience, not appropriate to using namespace in the header file
 using namespace std;
 
-//copy from leetcode website
+//functions below are auxiliary functions used in the main function, copied from leetcode website
 void trimLeftTrailingSpaces(string &input) {
     input.erase(input.begin(), find_if(input.begin(), input.end(), [](int ch) {
         return !isspace(ch);

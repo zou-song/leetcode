@@ -81,6 +81,21 @@ string intergerVectorVectorToString(const vector<vector<int>> &vec2)
 	return "[" + ret.substr(0, ret.length() - 2) + "]";
 }
 
+vector<vector<int>> stringToIntegerVectorVector(string input)
+{
+    trimLeftTrailingSpaces(input);
+    trimRightTrailingSpaces(input);
+    input = input.substr(1, input.length() - 2);
+    stringstream ss;
+    ss.str(input);
+    string item;
+    char delim = ',';
+    while (getline(ss, item, delim)) {
+        output.push_back(stringToIntegerVector(item));
+    }
+    return output;
+}
+
 string stringToString(string input) {
     assert(input.length() >= 2);
     string result;

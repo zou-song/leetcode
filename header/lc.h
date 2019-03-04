@@ -34,7 +34,7 @@ void trimRightTrailingSpaces(string &input) {
 template<typename T>
 void walkString(T &t, string &str)
 {
-    throw invalid_argument(string("invalid value type: ") + typeid(T).name());
+    t.parseFromString(str);
 }
 
 template<> void walkString(int &n, string &str)
@@ -148,8 +148,7 @@ void walkString(vector<T> &vec, string &str)
 template<typename T>
 string toString(const T &t)
 {
-    throw invalid_argument(string("cannot convert to string: ") + typeid(T).name());
-    return "";
+    return t.toString();
 }
 
 template<> string toString(const bool &b)

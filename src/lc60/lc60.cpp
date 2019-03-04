@@ -19,7 +19,7 @@ public:
         {
             k -= tp;
         }
-        return str[i] + getPermutation(str.substr(idx, i - idx) + str.substr(i + 1), k);
+        return str.substr(0, idx) + str[i] + getPermutation(str.substr(idx, i - idx) + str.substr(i + 1), k);
     }
     
     string getPermutation(int n, int k) {

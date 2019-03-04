@@ -25,12 +25,13 @@ public:
 
 int main(int argc, char *argv[])
 {
-	vector<vector<char>> input = {{'5','3','.','.','7','.','.','.','.'}, {'6','.','.','1','9','5','.','.','.'}, {'.','9','8','.','.','.','.','6','.'}, 
-								{'8','.','.','.','6','.','.','.','3'}, {'4','.','.','8','.','3','.','.','1'}, {'7','.','.','.','2','.','.','.','6'},
-								{'.','6','.','.','.','.','2','8','.'}, {'.','.','.','4','1','9','.','.','5'}, {'.','.','.','.','8','.','.','7','9'}};
-	bool expected = true;
-	bool output = Solution().isValidSudoku(input);
-	cout << "expected: " << expected << endl;
-	cout << "output: " << output << endl;
+	string line;
+	while (getline(cin, line))
+	{
+		vector<vector<char>> input;
+		walkString(input, line);
+		bool output = Solution().isValidSudoku(input);
+		cout << toString(output) << endl;
+	}
 	return 0;
 }

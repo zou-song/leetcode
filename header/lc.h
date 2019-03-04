@@ -50,6 +50,40 @@ template<> void walkString(int &n, string &str)
     	str = str.substr(idx);
 }
 
+template<> void walkString(char &s, string &str)
+{
+    trimLeftTrailingSpaces(str);
+    trimRightTrailingSpaces(str);
+    if (str.empty() || str[0] != '"' || str.size() < 3)
+        throw invalid_argument("cannot parse to char");
+	size_t i = 1;
+	char currentChar = str[i];
+	if (str[i] == '\\') {
+		char nextChar = str[i+1];
+		switch (nextChar) {
+			case '\"': s = '\"'; break;
+			case '/' : s = '/'; break;
+			case '\\': s = '\\'; break;
+			case 'b' : s = '\b'; break;
+			case 'f' : s = '\f'; break;
+			case 'r' : s = '\r'; break;
+			case 'n' : s = '\n'; break;
+            case 't' : s = '\t'; break;
+			default: break;
+		}
+		i++;
+	} else {
+		s = currentChar;
+	}
+	if (str.size() == i + 1 || str[i + 1] != '"')
+        throw invalid_argument("cannot parse to char");
+	size_t idx = str.find_first_not_of(", ", i + 2);
+	if (idx == string::npos)
+		str = "";
+	else
+		str = str.substr(idx);
+}
+
 template<> void walkString(string &s, string &str)
 {
     trimLeftTrailingSpaces(str);

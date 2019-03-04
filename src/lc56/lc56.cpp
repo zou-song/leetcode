@@ -14,7 +14,7 @@ struct Interval {
 		end = tmp[1];
 	}
 
-	string toString() const
+	string toStr() const
 	{
 		vector<int> tmp = {start, end};
 		return toString(tmp);

@@ -148,7 +148,7 @@ void walkString(vector<T> &vec, string &str)
 template<typename T>
 string toString(const T &t)
 {
-    return t.toString();
+    return t.toStr();
 }
 
 template<> string toString(const bool &b)

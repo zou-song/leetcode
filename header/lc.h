@@ -6,8 +6,10 @@
 #include <iostream>
 #include <map>
 #include <numeric>
+#include <stdexcept>
 #include <sstream>
 #include <string>
+#include <typeinfo>
 #include <unordered_map>
 #include <vector>
 #include <memory.h>
@@ -26,6 +28,88 @@ void trimRightTrailingSpaces(string &input) {
     input.erase(find_if(input.rbegin(), input.rend(), [](int ch) {
         return !isspace(ch);
     }).base(), input.end());
+}
+
+template<typename T>
+void walkString(T &t, string &str)
+{
+    thorw invalid_argument("invalid value type: " + typeid(T).name());
+}
+
+template<> void walkString(int &n, string &str)
+{
+    trimLeftTrailingSpaces(str);
+    trimRightTrailingSpaces(str);
+    size_t idx = 0;
+    n = stoi(str, &idx);
+    idx = str.find_first_not_of(", ", idx);
+    str = str.substr(idx);
+}
+
+template<> void walkString(string &s, string &str)
+{
+    trimLeftTrailingSpaces(str);
+    trimRightTrailingSpaces(str);
+    if (str.empty() || str[0] != '"')
+        throw invalid_argument("cannot parse to string");
+    size_t end = str.find_first_of('"', 1);
+    if (end == string::npos)
+        throw invalid_argument("cannot parse to string");
+    s = str.substr(1, end - 1);
+    size_t idx = str.find_first_not_of(", ", idx + 1);
+    str = str.substr(idx);
+}
+
+template<typename T> 
+void walkString(vector<T> &vec, string &str)
+{
+    trimLeftTrailingSpaces(str);
+    trimRightTrailingSpaces(str);
+    if (str.empty() || str[0] != '[')
+        throw invalid_argument("cannot parse to vector");
+    while (!str.empty() && str[0] != ']')
+    {
+        T t;
+        walkString(t, str);
+        vec.push_back(t);
+    }
+    if (str.empty())
+        throw invalid_argument("cannot parse to vector");
+    size_t idx = str.find_first_not_of(", ", 1);
+    str = str.substr(idx);
+}
+
+template<typename T>
+string toString(const T &t)
+{
+    throw invalid_argument("cannot convert to string: " + typeid(T).name());
+    return "";
+}
+
+template<> string toString(const int &n)
+{
+    return to_string(n);
+}
+
+template<> string toString(const string &str)
+{
+    return '"' + str + '"';
+}
+
+template<typename T>
+string toString(const vector<T> &vec)
+{
+    string ret;
+    int len = vec.size();
+    for (int i = 0; i < len; ++i)
+    {
+        ret = ret + toString(vec[i]);
+        if (i != len - 1)
+        {
+            ret += ", "
+        }
+    }
+    return '[' + ret + ']';
 }
 
 int stringToInteger(string input) {

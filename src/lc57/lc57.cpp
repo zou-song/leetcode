@@ -66,8 +66,9 @@ int main(int argc, char *argv[])
 		vector<Interval> input1;
 		walkString(input1, line1);
 		string line2;
+		getline(cin, line2);
 		Interval input2;
-		walkString(input2, lin2);
+		walkString(input2, line2);
 		vector<Interval> output = Solution().insert(input1, input2);
 		cout << toString(output) << endl;
 	}

@@ -30,6 +30,20 @@ void trimRightTrailingSpaces(string &input) {
     }).base(), input.end());
 }
 
+template<typename T>
+struct LCListNode
+{
+    T val;
+    LCListNode *next;
+    LCListNode(const T& v) : val(v), next(NULL){}
+    ~LCListNode() {
+        if (next)    
+            delete next;
+    }
+
+    void paseFromString(string& str);
+};
+
 //functions to build structured data form string
 template<typename T>
 void walkString(T &t, string &str)
@@ -142,6 +156,15 @@ void walkString(vector<T> &vec, string &str)
 		str = "";
 	else
 		str = str.substr(idx);
+}
+
+template<typename T>
+void LCListNode<T>::parseFromString(string &str)
+{
+    vector<T> tmp;
+    walkString(tmp, str);
+    for (auto &t : tmp)
+    {}
 }
 
 //functions to build string from structured data

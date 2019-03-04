@@ -45,6 +45,7 @@ To build:
 | 58  |[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|  Easy  |
 | 59  |[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)|  Medium  |
 | 60  |[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)|  Medium  |
+| 61  |[Rotate List](https://leetcode.com/problems/rotate-list/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
     string line;
     while (getline(cin, line))
     {
-        vectot<string> input;
+        vector<string> input;
         walkString(input, line);
         vector<vector<string>> output = Solution().groupAnagrams(input);
         cout << toString(output) << endl;

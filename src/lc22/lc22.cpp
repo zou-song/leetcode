@@ -34,11 +34,14 @@ public:
 
 int main(int argc, char *argv[])
 {
-    int n = 3;
-    vector<string> output = Solution().generateParenthesis(n);
-    for (auto &str : output)
-    {
-        cout << str << "\n";
-    }
+	string line;
+	while (getline(cin, line))
+	{
+		int n = 0;
+		walkString(n, line);
+    	vector<string> result = Solution().generateParenthesis(n);
+		string output = toString(result);
+		cout << output << endl;
+	}
     return 0;
 }

@@ -27,9 +27,13 @@ public:
 
 int main(int argc, char *argv[])
 {
-    vector<vector<int>> input = {{1, 1, 0}, {1, 0, 1}, {0, 0, 0}};
-    vector<vector<int>> expected = {{1, 0, 0}, {0, 1, 0}, {1, 1, 1}};
-    vector<vector<int>> output = Solution().flipAndInvertImage(input);
-	cout << "expected and output are " << ((expected == output) ? "true" : "false") << endl;
+	string line;
+	while (getline(cin, line))
+	{
+		vector<vector<int>> input;
+		walkString(input, line);
+    	vector<vector<int>> output = Solution().flipAndInvertImage(input);
+		cout << toString(output) << endl;
+	}
     return 0;
 }

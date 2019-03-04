@@ -36,6 +36,7 @@ To build:
 | 45  |[Jump Game II](https://leetcode.com/problems/jump-game-ii/)|  Hard  |
 | 46  |[Permutations](https://leetcode.com/problems/permutations/)|  Medium  |
 | 48  |[Rotate Image](https://leetcode.com/problems/rotate-image/)|  Medium  |
+| 49  |[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

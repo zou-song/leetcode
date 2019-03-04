@@ -3,7 +3,7 @@
 class Solution {
 public:
     int lengthOfLastWord(string s) {
-        int end_idx = s.find_last_not_of(' ');
+        size_t end_idx = s.find_last_not_of(' ');
         if (end_idx == string::npos)
             return 0;
         int idx = end_idx;

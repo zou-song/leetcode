@@ -39,6 +39,7 @@ To build:
 | 49  |[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|  Medium  |
 | 53  |[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|  Easy  |
 | 54  |[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|  Medium  |
+| 55  |[Jump Game](https://leetcode.com/problems/jump-game/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

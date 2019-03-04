@@ -47,13 +47,7 @@ int main(int argc, char *argv[])
         getline(cin, line);
         int target = stringToInteger(line);
         vector<vector<int>> output = Solution().combinationSum2(candidates, target);
-        cout << "[\n";
-        for (auto &vec : output)
-        {
-            string str = integerVectorToString(vec);
-            cout << str << endl;
-        }
-        cout << "]\n";
+        cout << toString(output) << endl;
     }
     return 0;
 }

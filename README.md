@@ -42,6 +42,7 @@ To build:
 | 55  |[Jump Game](https://leetcode.com/problems/jump-game/)|  Medium  |
 | 56  |[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|  Medium  |
 | 57  |[Insert Interval](https://leetcode.com/problems/insert-interval/)|  Hard  |
+| 58  |[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

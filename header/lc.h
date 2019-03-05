@@ -2,7 +2,7 @@
 #define __LEETCODE_LC_H__
 
 #include <algorithm>
-#include <assert.h>
+#include <climits>
 #include <iostream>
 #include <map>
 #include <numeric>
@@ -12,6 +12,7 @@
 #include <typeinfo>
 #include <unordered_map>
 #include <vector>
+#include <assert.h>
 #include <memory.h>
 
 //just for convenience, not appropriate to using namespace in the header file

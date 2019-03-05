@@ -48,6 +48,7 @@ To build:
 | 61  |[Rotate List](https://leetcode.com/problems/rotate-list/)|  Medium  |
 | 62  |[Unique Paths](https://leetcode.com/problems/unique-paths/)|  Medium  |
 | 63  |[Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)|  Medium  |
+| 64  |[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

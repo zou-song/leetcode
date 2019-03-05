@@ -1,16 +1,9 @@
 # leetcode
 My own leetcode problem solutions.
-To build:
-  1. Configuration:  
-    ./configure [src_path]...  
-    For example, "./configure lc1" will configure "./src/lc1/" project, and "./configure" (no arguments) will configure all the projects under "src" folder;  
-  2. Build:  
-    ./build [src_path]...  
-    For example, "./build lc1" will build "./src/lc1" project, and "./build" (no arguments) will build all the projects under "src" folder;  
-  3. Run the program you interested in, for example, you want to run NO.12 leetcode program, you need:  
-    cd ./src/lc12  
-    ./lc  
-  Note: all the executable binaries are named "lc".  
+To build:  
+	./build [project_path]...  
+	If one or multiple arguments(the project folder name under "src" folder) are provided, the projects related to the arguments will be built. If no argument provided, all the projects under the "src" directory will be built, for example, "./build lc12" will only build "./src/lc12" project, "./build lc12 lc13" will build both "./src/lc12" and "./src/lc13" projects, "./build" command with no auguments will build all the projects under the "src" directory.  
+Note: all the executable binaries are named "lc", the program input format is the same as the input format in leetcode website.  
   
 | No.  | Title  | Difficulty  |
 |:----:|:------:|:-----------:|

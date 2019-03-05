@@ -8,6 +8,17 @@ usage()
 	echo "Usage: $0 [src-path ...]"
 }
 
+config()
+{
+	if [ ! -d $1 ]; then
+		echo "$1 not exist!"
+		return 1
+	fi
+	cd $1
+	ln -snf $BASE_PATH/header/lc.h
+	ln -snf $BASE_PATH/MakefileTempl Makefile
+}
+
 build()
 {
 	if [ ! -d $1 ]; then
@@ -15,20 +26,20 @@ build()
 		return 1
 	fi
 	cd $1
-	echo "$1 start bullding..."
 	make clean
 	make
-	echo "$1 build completely"
 }
 
 if [ $# == 0 ]; then
 	ALL_PATH=$(find $SRC_PATH -maxdepth 1 -type d -name "lc*")
 	for path in $ALL_PATH; do
+		config $path
 		build $path
 	done
 else
 	for path in $@; do
 		absolute_path=$SRC_PATH/$path
+		config $absolute_path
 		build $absolute_path
 	done
 fi

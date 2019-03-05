@@ -51,6 +51,7 @@ To build:
 | 64  |[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|  Medium  |
 | 65  |[Valid Number](https://leetcode.com/problems/valid-number/)|  Hard  |
 | 66  |[Plus One](https://leetcode.com/problems/plus-one/)|  Easy  |
+| 67  |[Add Binary](https://leetcode.com/problems/add-binary/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

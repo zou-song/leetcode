@@ -6,6 +6,7 @@
 #include <iostream>
 #include <map>
 #include <numeric>
+#include <stack>
 #include <stdexcept>
 #include <sstream>
 #include <string>

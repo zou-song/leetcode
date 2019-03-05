@@ -36,13 +36,33 @@ struct LCListNode
     T val;
     LCListNode *next;
     LCListNode(const T& v) : val(v), next(NULL){}
-    ~LCListNode() {
-        if (next)    
-            delete next;
+};
+
+template<typename T>
+struct LCList
+{
+    LCListNode<T> *head;
+
+    LCList(){ head = NULL; }
+    LCList(LCListNode<T> &ptr) : head(ptr) {}
+    ~LCList()
+    {
+        destroyList();
+    }
+    void destroyList()
+    {
+        while (head->next)
+        {
+            LCListNode<T> *next = head->next;
+            delete head;
+            head = next;
+        }
+        head = NULL;
     }
 
-    void paseFromString(string& str);
-};
+    void parseFromString(string &str);
+    string toStr();
+}
 
 //functions to build structured data form string
 template<typename T>
@@ -159,12 +179,27 @@ void walkString(vector<T> &vec, string &str)
 }
 
 template<typename T>
-void LCListNode<T>::parseFromString(string &str)
+void LCList<T>::parseFromString(string &str)
 {
     vector<T> tmp;
     walkString(tmp, str);
+    LCList<T> tmplist;
+    LCListNode<T> *pre = NULL;
     for (auto &t : tmp)
-    {}
+    {
+        LCListNode *node = new LCListNode(t);
+        if (!pre)
+        {
+            pre = node;
+            tmplist.head = pre;
+        }
+        else
+        {
+            pre->next = node;
+            pre = pre->next;
+        }
+    }
+    swap(head, tmplist.head);
 }
 
 //functions to build string from structured data
@@ -203,6 +238,19 @@ string toString(const vector<T> &vec)
         }
     }
     return '[' + ret + ']';
+}
+
+template<typename T>
+void LCList<T>::toStr()
+{
+    vector<T> tmp;
+    LCListNode<T> *node = head;
+    while (node)
+    {
+        tmp.push_back(node->val);
+        node = node->next;
+    }
+    return toString(tmp);
 }
 
 //functions used in leetcode main

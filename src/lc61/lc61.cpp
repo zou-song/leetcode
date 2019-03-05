@@ -1,5 +1,7 @@
 #include "lc.h"
 
+typedef LCListNode<int> ListNode;
+
 class Solution {
 public:
     ListNode* rotateRight(ListNode* head, int k) {
@@ -27,3 +29,20 @@ public:
         return new_head;
     }
 };
+
+int main(int argc, char *argv[])
+{
+    string line;
+    while (getline(cin, line)) {
+        LCList<int> lclist;
+        walkString(lclist, line);
+        getline(cin, line);
+        int k = stringToInteger(line);
+        
+        lclist.head = Solution().rotateRight(lclist.head, k);
+
+        string out = toString(lclist);
+        cout << out << endl;
+    }
+    return 0;
+}

@@ -9,7 +9,7 @@ public:
         int len = words.size();
         for (int i = 0; i < len; ++i)
         {
-            if (width + words[i].size() + 1 > maxWidth)
+            if (width + (int)words[i].size() + 1 > maxWidth && !line.empty())
             {
                 int cnt = line.size();
                 int wdwidth = width - (cnt - 1);
@@ -37,8 +37,11 @@ public:
                 line.clear();
                 width = 0;
             }
+            if (line.empty())
+                width += words[i].size();
+            else
+                width += (1 + words[i].size());
             line.push_back(words[i]);
-            width += (1 + words[i].size());
         }
         if (!line.empty())
         {
@@ -50,7 +53,7 @@ public:
                 if (i != cnt - 1)
                     str += ' ';
             }
-            if (str.size() < maxWidth)
+            if (str.size() < (unsigned int)maxWidth)
                 str += string(maxWidth - str.size(), ' ');
             ret.push_back(str);
         }

@@ -4,12 +4,14 @@ class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
         int len = digits.size();
-        int pre_plus = digits[len - 1] + 1;
+        int pre_plus = 1;
         int idx = len - 1;
         while (pre_plus > 0 && idx >= 0)
         {
+			pre_plus += digits[idx];
             digits[idx] = pre_plus % 10;
             pre_plus /= 10;
+			idx--;
         }
         if (pre_plus > 0)
         {

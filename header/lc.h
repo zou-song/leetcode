@@ -51,7 +51,7 @@ struct LCList
     }
     void destroyList()
     {
-        while (head->next)
+        while (head && head->next)
         {
             LCListNode<T> *next = head->next;
             delete head;
@@ -61,8 +61,8 @@ struct LCList
     }
 
     void parseFromString(string &str);
-    string toStr();
-}
+    string toStr() const;
+};
 
 //functions to build structured data form string
 template<typename T>
@@ -187,7 +187,7 @@ void LCList<T>::parseFromString(string &str)
     LCListNode<T> *pre = NULL;
     for (auto &t : tmp)
     {
-        LCListNode *node = new LCListNode(t);
+        LCListNode<T> *node = new LCListNode<T>(t);
         if (!pre)
         {
             pre = node;
@@ -241,7 +241,7 @@ string toString(const vector<T> &vec)
 }
 
 template<typename T>
-void LCList<T>::toStr()
+string LCList<T>::toStr() const
 {
     vector<T> tmp;
     LCListNode<T> *node = head;

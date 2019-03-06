@@ -49,4 +49,5 @@ int main(int argc, char *argv[])
 		lclist.head = Solution().deleteDuplicates(lclist.head);
 		cout << toString(lclist) << endl;
 	}
+    return 0;
 }

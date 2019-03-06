@@ -5,14 +5,15 @@ SRC_PATH=$BASE_PATH/src
 
 usage()
 {
-	echo "Usage: $0 [src-path ...]"
+	echo "Usage: $0 [project-path]..."
 }
 
 config()
 {
 	if [ ! -d $1 ]; then
-		echo "$1 not exist!"
-		return 1
+		echo "$1 does not exist!"
+		usage
+		exit 1
 	fi
 	cd $1
 	ln -snf $BASE_PATH/header/lc.h
@@ -22,8 +23,9 @@ config()
 build()
 {
 	if [ ! -d $1 ]; then
-		echo "$1 not exist!"
-		return 1
+		echo "$1 does not exist!"
+		usage
+		exit 1
 	fi
 	cd $1
 	make clean

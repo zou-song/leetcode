@@ -57,8 +57,8 @@ int main(int argc, char *argv[])
         vector<vector<char>> board;
         walkString(board, line);
         getline(cin, line);
-        string target;
-        walkString(target, line);
+        string word;
+        walkString(word, line);
         auto output = Solution().exist(board, word);
         cout << toString(output) << endl;
     }

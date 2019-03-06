@@ -55,6 +55,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 77  |[Combinations](https://leetcode.com/problems/combinations/)|  Medium  |
 | 78  |[Subsets](https://leetcode.com/problems/subsets/)|  Medium  |
 | 79  |[Word Search](https://leetcode.com/problems/word-search/)|  Medium  |
+| 80  |[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

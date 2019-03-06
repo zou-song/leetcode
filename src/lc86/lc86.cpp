@@ -32,6 +32,8 @@ public:
         }
         if (ln1)
             ln1->next = h2;
+		if (ln2)
+			ln2->next = NULL;
         if (h1)
             return h1;
         return h2;
@@ -47,7 +49,7 @@ int main(int argc, char *argv[])
 		walkString(lclist, line);
 		getline(cin, line);
 		int x = 0;
-		walkSring(x, line);
+		walkString(x, line);
 		lclist.head = Solution().partition(lclist.head, x);
 		cout << toString(lclist) << endl;
 	}

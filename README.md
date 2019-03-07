@@ -63,6 +63,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 88  |[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|  Easy  |
 | 89  |[Gray Code](https://leetcode.com/problems/gray-code/)|  Medium  |
 | 90  |[Subsets II](https://leetcode.com/problems/subsets-ii/)|  Medium  |
+| 91  |[Decode Ways](https://leetcode.com/problems/decode-ways/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

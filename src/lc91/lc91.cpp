@@ -23,7 +23,7 @@ public:
             {
                 if (s[i - 1] == '0' || s[i - 1] > '2')
                     tmp[i] = tmp[i - 1];
-                else if (s[i - 1] == 2)
+                else if (s[i - 1] == '2')
                 {
                     if (s[i] > '6')
                         tmp[i] = tmp[i - 1];

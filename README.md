@@ -60,6 +60,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 82  |[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)|  Medium  |
 | 83  |[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)|  Easy  |
 | 86  |[Partition List](https://leetcode.com/problems/partition-list/)|  Medium  |
+| 88  |[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

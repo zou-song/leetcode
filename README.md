@@ -65,6 +65,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 90  |[Subsets II](https://leetcode.com/problems/subsets-ii/)|  Medium  |
 | 91  |[Decode Ways](https://leetcode.com/problems/decode-ways/)|  Medium  |
 | 92  |[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)|  Medium  |
+| 93  |[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

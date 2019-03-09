@@ -71,6 +71,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 96  |[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)|  Medium  |
 | 97  |[Interleaving String](https://leetcode.com/problems/interleaving-string/)|  Hard  |
 | 98  |[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|  Medium  |
+| 99  |[Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/)|  Hard  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

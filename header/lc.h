@@ -96,6 +96,12 @@ struct LCBinaryTree
         delete ptr;
     }
 
+    LCBinaryTree& operator = (const LCBinaryTreeNode<T> *ptr)
+    {
+        root = ptr;
+        return *this;
+    }
+
     void parseFromString(string &str);
     string toStr() const;
 };

@@ -1,6 +1,6 @@
 #include "lc.h"
 
-typedef LCBinaryTreeNode<T> TreeNode;
+typedef LCBinaryTreeNode<int> TreeNode;
 
 class Solution {
 public:
@@ -42,10 +42,9 @@ int main(int argc, char *argv[])
 	string line;
 	while (getline(cin, line))
 	{
-		LCBinaryTree bt;
+		LCBinaryTree<int> bt;
 		walkString(bt, line);
 		auto output = Solution().inorderTraversal(bt.root);
-		cout << toString(bt) << endl;
 		cout << toString(output) << endl;
 	}
 	return 0;

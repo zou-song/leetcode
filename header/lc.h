@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <climits>
 #include <iostream>
+#include <list>
 #include <map>
 #include <numeric>
 #include <stack>
@@ -66,11 +67,70 @@ struct LCList
     string toStr() const;
 };
 
+template<typename T>
+struct LCBinaryTreeNode
+{
+    T val;
+    LCBinaryTreeNode *left;
+    LCBinaryTreeNode *right;
+    LCBinaryTreeNode(): val(0), left(NULL), right(NULL){}
+    LCBinaryTreeNode(const T& v) : val(v), left(NULL), right(NULL){}
+};
+
+template<typename T>
+struct LCBinaryTree
+{
+    LCBinaryTreeNode<T> *root;
+
+    LCBinaryTree(): root(NULL) {}
+    LCBinaryTree(LCBinaryTreeNode<T> *ptr): root(ptr) {}
+    ~LCBinaryTree()
+    {
+        destroyBinaryTree(root);
+    }
+    static void destroyBinaryTree(LCBinaryTreeNode<T> *ptr)
+    {
+        if (!ptr)   return;
+        destroyBinaryTree(ptr->left);
+        destroyBinaryTree(ptr->right);
+        delete ptr;
+    }
+
+    void parseFromString(string &str);
+    string toStr() const;
+};
+
 //functions to build structured data form string
 template<typename T>
 void walkString(T &t, string &str)
 {
     t.parseFromString(str);
+}
+
+template<typename T>
+void walkString(T* &p, string &str)
+{
+    trimLeftTrailingSpaces(str);
+    trimRightTrailingSpaces(str);
+    if (str.empty())
+        throw invalid_argument("parse failed");
+    size_t idx = str.find_first_of(",]");
+    string tmp = str.substr(0, idx);
+    trimRightTrailingSpaces(tmp);
+    if (tmp == "null" || tmp == "NULL")
+    {
+        p = NULL;
+        size_t idx2 = str.find_first_not_of(", ", idx);
+        if (idx2 == string::npos)
+            str = "";
+        else
+            str = str.substr(idx2);
+    }
+    else
+    {
+        p = new T;
+        walkString(*p, str);
+    }
 }
 
 template<> void walkString(int &n, string &str)
@@ -204,11 +264,54 @@ void LCList<T>::parseFromString(string &str)
     swap(head, tmplist.head);
 }
 
+template<typename T>
+void walkString(LCBinaryTreeNode<T> &node, string &str)
+{
+    walkString(node.val, str);
+}
+
+template<typename T>
+void LCBinaryTree<T>::parseFromString(string &str)
+{
+    vector<LCBinaryTreeNode<T>*> tmp;
+    walkString(tmp, str);
+    if (tmp.empty())
+    {
+        root = NULL;
+        return;
+    }
+    root = tmp[0];
+    int len = tmp.size();
+    int idx1 = 0, idx2 = 1;
+    LCBinaryTreeNode<T> *node = tmp[0];
+    while (idx1 < len - 1 && idx2 < len)
+    {
+        if (!node)
+            node = tmp[++idx1];
+        else
+        {
+            node->left = tmp[idx2++];
+            if (idx2 >= len)
+                node->right = NULL;
+            else
+                node->right = tmp[idx2++];
+			node = tmp[++idx1];
+        }
+    }
+}
+
 //functions to build string from structured data
 template<typename T>
 string toString(const T &t)
 {
     return t.toStr();
+}
+
+template<typename T>
+string toString(T *p)
+{
+    if (!p) return "null";
+    return toString(*p);
 }
 
 template<> string toString(const bool &b)
@@ -243,6 +346,12 @@ string toString(const vector<T> &vec)
 }
 
 template<typename T>
+string toString(const LCBinaryTreeNode<T> &node)
+{
+	return toString(node.val);
+}
+
+template<typename T>
 string LCList<T>::toStr() const
 {
     vector<T> tmp;
@@ -253,6 +362,26 @@ string LCList<T>::toStr() const
         node = node->next;
     }
     return toString(tmp);
+}
+
+template<typename T>
+string LCBinaryTree<T>::toStr() const
+{
+    list<LCBinaryTreeNode<T>*> tmplist;
+    vector<LCBinaryTreeNode<T>*> tmpvec;
+    tmplist.push_back(root);
+    while (!tmplist.empty())
+    {
+        LCBinaryTreeNode<T> *p = tmplist.front();
+        tmplist.pop_front();
+        tmpvec.push_back(p);
+        if (p && (p->left || p->right))
+        {
+            tmplist.push_back(p->left);
+            tmplist.push_back(p->right);
+        }
+    }
+    return toString(tmpvec);
 }
 
 //functions used in leetcode main

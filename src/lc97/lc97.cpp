@@ -56,7 +56,6 @@ public:
             for (int j = 0; j <= len2; ++j)
             {
                 if (i == 0 && j == 0)   continue;
-                bool b1 = false, b2 = false;
                 if (i - 1 >= 0)
                 {
                     tmp[i][j] = tmp[i][j] || ((s1[i - 1] == s3[i + j - 1]) && tmp[i - 1][j]);

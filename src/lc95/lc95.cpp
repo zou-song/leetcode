@@ -1,14 +1,7 @@
 #include "lc.h"
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
+typedef LCBinaryTreeNode<int> TreeNode;
+
 class Solution {
 public:
     vector<TreeNode*> generateTrees(const vector<int>& nums, int beg, int end)
@@ -54,9 +47,7 @@ int main(int argc, char *argv[])
 		walkString(n, line);
 		auto vec = Solution().generateTrees(n);
 		vector<LCBinaryTree<int>> output(vec.size());
-		transform(vec.begin(), vec.end(), output.begin(), [](const TreeNode* ptr){
-			return ptr;
-		});
+		copy(vec.begin(), vec.end(), output.begin());
 		cout << toString(output) << endl;
 	}
 	return 0;

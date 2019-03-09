@@ -96,6 +96,12 @@ struct LCBinaryTree
         delete ptr;
     }
 
+    LCBinaryTree& operator = (LCBinaryTreeNode<T> *ptr)
+    {
+        root = ptr;
+        return *this;
+    }
+
     void parseFromString(string &str);
     string toStr() const;
 };
@@ -381,6 +387,10 @@ string LCBinaryTree<T>::toStr() const
             tmplist.push_back(p->right);
         }
     }
+	if (!tmpvec.empty() && tmpvec.back() == NULL)
+	{
+		tmpvec.pop_back();
+	}
     return toString(tmpvec);
 }
 

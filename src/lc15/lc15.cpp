@@ -27,7 +27,7 @@ public:
             {
                 int rn = nums[idx2];
                 int target = 0 - ln - rn;
-                if (target < nums[idx1] || target > nums[idx2])
+                if (target > nums[idx2])
                     break;
                 int idx = halfSearch(nums, idx1 + 1, idx2 - 1, target);
                 if (idx > idx1)

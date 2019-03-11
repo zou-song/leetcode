@@ -13,6 +13,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 7  |[Reverse Integer](https://leetcode.com/problems/reverse-integer/)| Easy  |
 | 8  |[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)| Medium  |
 | 9  |[Palindrome Number](https://leetcode.com/problems/palindrome-number/)| Easy  |
+| 10  |[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)| Hard  |
 | 12  |[Integer to Roman](https://leetcode.com/problems/integer-to-roman/)| Medium  |
 | 13  |[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)| Easy  |
 | 22  |[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| Medium  |

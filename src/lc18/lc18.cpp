@@ -2,35 +2,41 @@
 
 class Solution {
 public:
-    void func(const vector<int>& nums, int target, int idx, int n, vector<vector<int>>& ret, vector<int> vec)
-    {
-        if(target == 0 && n == 0)
-        {
-            ret.push_back(vec);
-            return;
-        }
-        if (n < 0)
-            return;
-        int len = nums.size();
-        if (idx >= len)
-            return;
-        int idx2 = idx;
-        while (idx2 < len && nums[idx2] == nums[idx])
-            idx2++;
-        func(nums, target, idx2, n, ret, vec);
-        for (int i = idx, j = 0; i < idx2 && j < n; ++i, ++j)
-        {
-            target = target - nums[i];
-            vec.push_back(nums[i]);
-            func(nums, target, idx2, --n, ret, vec);
-        }
-    }
     vector<vector<int>> fourSum(vector<int>& nums, int target) {
         sort(nums.begin(), nums.end());
-        vector<vector<int>> ret;
-        vector<int> vec;
-        func(nums, target, 0, 4, ret, vec);
-        return ret;
+        vector<vector<int>> result;
+    
+        int len = nums.size();
+        for (int i = 0; i < len - 3; ++i)
+        {
+            for (int j = i + 1; j < len - 2; ++j)
+            {
+                int sum = target - nums[i] - nums[j];
+                int front = j + 1, back = len - 1;
+                while (front < back)
+                {
+                    int a = nums[front] + nums[back];
+    
+                    if (a < sum)    front++;
+                    else if (a > sum)   back--;
+                    else
+                    {
+                        vector<int> tmp;
+                        tmp.push_back(nums[i]); tmp.push_back(nums[j]); tmp.push_back(nums[front]); tmp.push_back(nums[back]);
+                        result.push_back(tmp);
+    
+                        while (front < back && nums[front] == tmp[2])   front++;
+                        while (front < back && nums[back] == tmp[3])    back--;
+                    }
+                }
+    
+                while (j < len - 1 && nums[j+1] == nums[j]) j++;
+            }
+    
+            while (i < len - 1 && nums[i + 1] == nums[i])   i++;
+        }
+    
+        return result;
     }
 };
 

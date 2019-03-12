@@ -38,7 +38,7 @@ int main()
 		string input;
 		walkString(input, line);
 		auto output = Solution().letterCombinations(input);
-		cout << output << endl;
+		cout << toString(output) << endl;
 	}
 	return 0;
 }

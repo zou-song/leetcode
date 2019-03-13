@@ -5,7 +5,6 @@ typedef LCListNode<int> ListNode;
 class Solution {
 public:
     ListNode* mergeKLists1(vector<ListNode*>& lists) {
-        int len = lists.size();
         vector<ListNode*> tmp;
         for (auto &p : lists)
         {

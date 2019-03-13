@@ -47,7 +47,46 @@ struct LCList
     LCListNode<T> *head;
 
     LCList(){ head = NULL; }
+	LCList(const LCList<T> &l): head(NULL)
+	{
+		head = deepCopy(l);
+	}
+	LCList(LCList<T> &&l) : head(NULL) { swap(head, l.head); }
     LCList(LCListNode<T> &ptr) : head(ptr) {}
+
+	LCList& operator = (const LCList<T> &rhs)
+	{
+		if (this == &rhs)
+			return *this;
+		LCList<T> tmp;
+		tmp.head = deepCopy(rhs);
+		swap(head, tmp.head);
+		return *this;
+	}
+	LCList& operator = (LCList<T> &&rhs)
+	{
+		swap(head, rhs.head);
+		return *this;
+	}
+	
+	static LCListNode<T>* deepCopy(const LCList<T> &l)
+	{
+		LCListNode<T> *p = l.head;
+		LCListNode<T> *pre = NULL;
+		LCListNode<T> *ret = NULL;
+		while (p)
+		{
+			LCListNode<T> *pnode = new LCListNode<T>(p->val);
+			if (!ret)
+				ret = pnode;
+			if (pre)
+				pre->next = pnode;
+			pre = pnode;
+			p = p->next;
+		}
+		return ret;
+	}
+
     ~LCList()
     {
         destroyList();
@@ -84,6 +123,8 @@ struct LCBinaryTree
 
     LCBinaryTree(): root(NULL) {}
     LCBinaryTree(LCBinaryTreeNode<T> *ptr): root(ptr) {}
+	LCBinaryTree(LCBinaryTree<T> &&tree): root(NULL) {swap(root, tree.root);}
+
     ~LCBinaryTree()
     {
         destroyBinaryTree(root);
@@ -101,6 +142,11 @@ struct LCBinaryTree
         root = ptr;
         return *this;
     }
+	LCBinaryTree& operator = (LCBinaryTree<T> &&tree)
+	{
+		swap(root, tree.root);
+		return *this;
+	}
 
     void parseFromString(string &str);
     string toStr() const;
@@ -235,7 +281,7 @@ void walkString(vector<T> &vec, string &str)
     {
         T t;
         walkString(t, str);
-        vec.push_back(t);
+        vec.push_back(move(t));
     }
     if (str.empty())
         throw invalid_argument("cannot parse to vector");

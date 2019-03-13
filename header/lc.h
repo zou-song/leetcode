@@ -58,8 +58,9 @@ struct LCList
 	{
 		if (this == &rhs)
 			return *this;
-		destroyList();
-		head = deepCopy(rhs);
+		LCList<T> tmp;
+		tmp.head = deepCopy(rhs);
+		swap(head, tmp.head);
 		return *this;
 	}
 	LCList& operator = (LCList<T> &&rhs)

@@ -26,6 +26,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 20  |[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| Easy |
 | 21  |[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)| Easy |
 | 22  |[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| Medium  |
+| 23  |[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)| Hard  |
 | 24  |[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)| Medium  |
 | 25  |[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)| Hard  |
 | 26  |[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)| Easy|

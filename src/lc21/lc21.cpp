@@ -49,14 +49,16 @@ public:
 int main() {
     string line;
     while (getline(cin, line)) {
-        ListNode* l1 = stringToListNode(line);
+		LCList<int> lclist1;
+		walkString(lclist1, line);
         getline(cin, line);
-        ListNode* l2 = stringToListNode(line);
+		LCList<int> lclist2;
+		walkString(lclist2, line);
         
-        ListNode* ret = Solution().mergeTwoLists(l1, l2);
+        lclist1.head = Solution().mergeTwoLists(lclist1.head, lclist2.head);
+		lclist2.head = NULL;
 
-        string out = listNodeToString(ret);
-        cout << out << endl;
+        cout << toString(lclist1) << endl;
     }
     return 0;
 }

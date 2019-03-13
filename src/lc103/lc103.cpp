@@ -14,7 +14,6 @@ public:
         {
             depth++;
             vector<int> vec;
-            int len = tmp.size();
             stack<TreeNode*> tmplist;
             while (!tmp.empty())
             {

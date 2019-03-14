@@ -427,13 +427,13 @@ string LCBinaryTree<T>::toStr() const
         LCBinaryTreeNode<T> *p = tmplist.front();
         tmplist.pop_front();
         tmpvec.push_back(p);
-        if (p && (p->left || p->right))
+        if (p)
         {
             tmplist.push_back(p->left);
             tmplist.push_back(p->right);
         }
     }
-	if (!tmpvec.empty() && tmpvec.back() == NULL)
+	while (!tmpvec.empty() && tmpvec.back() == NULL)
 	{
 		tmpvec.pop_back();
 	}

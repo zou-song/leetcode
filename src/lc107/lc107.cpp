@@ -38,7 +38,7 @@ int main()
 	string line;
 	while (getline(cin, line))
 	{
-		LCBinary<int> btree;
+		LCBinaryTree<int> btree;
 		walkString(btree, line);
 		auto output = Solution().levelOrderBottom(btree.root);
 		cout << toString(output) << endl;

@@ -14,7 +14,7 @@ public:
             {
                 int idx1 = j - 1;
                 int idx2 = j;
-                if (idx1 < 0 || idx2 >= ret[i - 2].size())
+                if (idx1 < 0 || idx2 >= (int)ret[i - 2].size())
                     vec.push_back(1);
                 else
                     vec.push_back(ret[i - 2][idx1] + ret[i - 2][idx2]);

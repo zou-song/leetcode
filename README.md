@@ -106,6 +106,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 118  |[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)|  Easy  |
 | 119  |[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)|  Easy  |
 | 120  |[Triangle](https://leetcode.com/problems/triangle/)|  Easy  |
+| 121  |[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

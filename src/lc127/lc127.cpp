@@ -77,6 +77,7 @@ int main(int argc, char const *argv[])
 		getline(cin, line);
 		walkString(endWord, line);
 		vector<string> wordList;
+		getline(cin, line);
 		walkString(wordList, line);
 		cout << toString(Solution().ladderLength(beginWord, endWord, wordList)) << endl;
 	}

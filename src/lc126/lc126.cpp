@@ -21,11 +21,11 @@ public:
         wordList.push_back(beginWord);
         vector<vector<int>> flagSet(len + 1);
         int retidx = len + 1;
-        for (size_t i = 0; i < len + 1; ++i)
+        for (int i = 0; i < len + 1; ++i)
         {
             if (wordList[i] == endWord)
                 retidx = i;
-            for (size_t j = i + 1; j < len + 1; ++j)
+            for (int j = i + 1; j < len + 1; ++j)
             {
                 if (canTransform(wordList[i], wordList[j]))
                 {

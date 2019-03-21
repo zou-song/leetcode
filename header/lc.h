@@ -14,6 +14,7 @@
 #include <string>
 #include <typeinfo>
 #include <unordered_map>
+#include <unordered_set>
 #include <vector>
 #include <assert.h>
 #include <memory.h>

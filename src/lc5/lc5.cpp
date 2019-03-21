@@ -28,7 +28,10 @@ public:
                 for (int j = begIdx; j <= i; ++j)
                 {
                     if (s[j] == s[i] && isPalindrome(s, j, i))
+					{
                         dp[i] = i - j + 1;
+						break;
+					}
                 }
             }
         }

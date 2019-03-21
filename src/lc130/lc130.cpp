@@ -105,7 +105,8 @@ int main(int argc, char const *argv[])
 	{
 		vector<vector<char>> board;
 		walkString(board, line);
-		cout << toString(Solution().solve(board)) << endl;
+		Solution().solve(board);
+		cout << toString(board) << endl;
 	}
 	return 0;
 }

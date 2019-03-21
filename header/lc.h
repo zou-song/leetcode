@@ -378,6 +378,11 @@ template<> string toString(const int &n)
     return to_string(n);
 }
 
+template<> string toString(const char &c)
+{
+    return '"' + string(1, c) + '"';
+}
+
 template<> string toString(const string &str)
 {
     return '"' + str + '"';

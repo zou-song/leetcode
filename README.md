@@ -123,6 +123,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 134  |[Gas Station](https://leetcode.com/problems/gas-station/)|  Medium  |
 | 136  |[Single Number](https://leetcode.com/problems/single-number/)|  Easy  |
 | 137  |[Single Number II](https://leetcode.com/problems/single-number-ii/)|  Medium  |
+| 138  |[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

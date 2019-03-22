@@ -9,7 +9,7 @@ public:
 
     Node() {}
 
-    Node(int _val, vector<Node*> _neighbors) {
+    Node(int _val, vector<Node*> _neighbors = {}) {
         val = _val;
         neighbors = _neighbors;
     }

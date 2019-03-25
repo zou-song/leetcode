@@ -127,6 +127,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 139  |[Word Break](https://leetcode.com/problems/word-break/)|  Medium  |
 | 141  |[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|  Easy  |
 | 143  |[Reorder List](https://leetcode.com/problems/reorder-list/)|  Medium  |
+| 144  |[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

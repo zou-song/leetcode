@@ -41,7 +41,7 @@ int main(int argc, char const *argv[])
 	{
 		LCBinaryTree<int> btree;
 		walkString(btree, line);
-		cout << Solution().postorderTraversal(btree.root) << endl;
+		cout << toString(Solution().postorderTraversal(btree.root)) << endl;
 	}
 	return 0;
 }

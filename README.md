@@ -125,6 +125,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 137  |[Single Number II](https://leetcode.com/problems/single-number-ii/)|  Medium  |
 | 138  |[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|  Medium  |
 | 139  |[Word Break](https://leetcode.com/problems/word-break/)|  Medium  |
+| 141  |[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

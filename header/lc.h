@@ -110,6 +110,40 @@ struct LCList
 };
 
 template<typename T>
+struct LCCircledList : public LCList<T>
+{
+	LCListNode<T> *circle;
+	LCListNode<T> *tail;
+
+	LCCircledList() : circle(NULL), tail(NULL) {}
+	void setCircledPos(int pos)
+	{
+		if (pos < 0)	return;
+		circle = this->head;
+		tail = this->head;
+		int idx = 0;
+		while (idx < pos && tail)
+		{
+			circle = circle->next;
+			tail = tail->next;
+			idx++;
+		}
+		if (!tail)	return;
+		while (tail->next)
+		{
+			tail = tail->next;
+		}
+		tail->next = circle;
+	}
+
+	~LCCircledList()
+	{
+		if (tail)
+			tail->next = NULL;
+	}
+};
+
+template<typename T>
 struct LCBinaryTreeNode
 {
     T val;

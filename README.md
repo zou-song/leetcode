@@ -126,6 +126,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 138  |[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|  Medium  |
 | 139  |[Word Break](https://leetcode.com/problems/word-break/)|  Medium  |
 | 141  |[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|  Easy  |
+| 142  |[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|  Medium  |
 | 143  |[Reorder List](https://leetcode.com/problems/reorder-list/)|  Medium  |
 | 144  |[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)|  Medium  |
 | 145  |[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)|  Hard  |

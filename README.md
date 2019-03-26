@@ -136,6 +136,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 151  |[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)|  Medium  |
 | 153  |[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)|  Medium  |
 | 155  |[Min Stack](https://leetcode.com/problems/min-stack/)|  Easy  |
+| 160  |[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

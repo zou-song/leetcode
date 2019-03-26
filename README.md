@@ -133,6 +133,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 147  |[Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)|  Medium  |
 | 150  |[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|  Medium  |
 | 151  |[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)|  Medium  |
+| 153  |[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

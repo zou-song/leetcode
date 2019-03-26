@@ -6,8 +6,9 @@ class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
         if (!head)  return NULL;
+		if (!head->next)	return NULL;
         ListNode* p1 = head;
-        ListNode* p2 = head;
+        ListNode* p2 = head->next->next;
         while (p1 && p2 && p1 != p2)
         {
             p1 = p1->next;
@@ -50,7 +51,8 @@ int main(int argc, char const *argv[])
 		walkString(pos, line);
 		clist.setCircledPos(pos);
 		LCListNode<int> *node = Solution().detectCycle(clist.head);
-		cout << toString(node->val) << endl;
+		if (!node)	cout << "NULL" << endl;
+		else	cout << toString(node->val) << endl;
 	}
 	return 0;
 }

@@ -3,12 +3,12 @@
 class Solution {
 public:
     int compareVersion(string version1, string version2) {
-        int len1 = version1.size();
-        int len2 = version2.size();
-        int idx1 = 0, idx2 = 0;
+        size_t len1 = version1.size();
+        size_t len2 = version2.size();
+        size_t idx1 = 0, idx2 = 0;
         while (idx1 < len1 && idx2 < len2)
         {
-            int i = version1.find_first_of('.', idx1);
+            size_t i = version1.find_first_of('.', idx1);
             int n1 = 0;
             if (i == string::npos)
             {
@@ -20,7 +20,7 @@ public:
                 n1 = stoi(version1.substr(idx1, i - idx1));
                 idx1 = i + 1;
             }
-            int j = version2.find_first_of('.', idx2);
+            size_t j = version2.find_first_of('.', idx2);
             int n2 = 0;
             if (j == string::npos)
             {
@@ -39,7 +39,7 @@ public:
         }
         while (idx1 < len1)
         {
-            int i = version1.find_first_of('.', idx1);
+            size_t i = version1.find_first_of('.', idx1);
             int n1 = 0;
             if (i == string::npos)
             {
@@ -54,9 +54,9 @@ public:
             if (n1 > 0)
                 return 1;
         }
-        while (idx2 < len1)
+        while (idx2 < len2)
         {
-            int j = version2.find_first_of('.', idx2);
+            size_t j = version2.find_first_of('.', idx2);
             int n2 = 0;
             if (j == string::npos)
             {

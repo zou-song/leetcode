@@ -4,7 +4,7 @@ typedef LCBinaryTreeNode<int> TreeNode;
 
 class BSTIterator {
     vector<TreeNode*> _vec;
-    int _idx;
+    size_t _idx;
 public:
     BSTIterator(TreeNode* root) {
         TreeNode *p = root;

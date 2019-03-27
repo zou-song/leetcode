@@ -143,6 +143,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 168  |[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|  Easy  |
 | 169  |[Majority Element](https://leetcode.com/problems/majority-element/)|  Easy  |
 | 171  |[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)|  Easy  |
+| 172  |[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

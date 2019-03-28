@@ -150,6 +150,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 189  |[Rotate Array](https://leetcode.com/problems/rotate-array/)|  Easy  |
 | 190  |[Reverse Bits](https://leetcode.com/problems/reverse-bits/)|  Easy  |
 | 191  |[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|  Easy  |
+| 198  |[House Robber](https://leetcode.com/problems/house-robber/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

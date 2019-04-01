@@ -319,6 +319,29 @@ template<> void walkString(string &s, string &str)
 		str = str.substr(idx);
 }
 
+template<typename T1, typename T2>
+void walkString(pair<T1, T2>& pr, string &str)
+{
+    trimLeftTrailingSpaces(str);
+    trimRightTrailingSpaces(str);
+    if (str.empty() || str[0] != '[')
+        throw invalid_argument("cannot parse to vector");
+	str.erase(0, 1);
+	T1 t1;
+	walkString(t1, str);
+	T2 t2;
+	walkString(t2, str);
+	if (str.empty() || str[0] != ']')
+		throw invalid_argument("cannot parse to pair");
+	pr.first = move(t1);
+	pr.second = move(t2);
+	size_t idx = str.find_first_not_of(", ", 1);
+	if (idx == string::npos)
+		str = "";
+	else
+		str = str.substr(idx);
+}
+
 template<typename T> 
 void walkString(vector<T> &vec, string &str)
 {

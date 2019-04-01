@@ -154,6 +154,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 199  |[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)|  Medium  |
 | 200  |[Number of Islands](https://leetcode.com/problems/number-of-islands/)|  Medium  |
 | 201  |[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)|  Medium  |
+| 202  |[Happy Number](https://leetcode.com/problems/happy-number/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

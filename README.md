@@ -159,6 +159,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 204  |[Count Primes](https://leetcode.com/problems/count-primes/)|  Easy  |
 | 205  |[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|  Easy  |
 | 206  |[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|  Easy  |
+| 207  |[Course Schedule](https://leetcode.com/problems/course-schedule/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

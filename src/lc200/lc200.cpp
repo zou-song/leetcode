@@ -23,22 +23,22 @@ public:
             int j = que.front().second;
             que.pop();
             grid[i][j] = '2';
-            if (i - 1 >= 0 && uset.count(pair(i - 1, j)) == 0 && grid[i- 1][j] == '1')
+            if (i - 1 >= 0 && uset.count(pair<int, int>(i - 1, j)) == 0 && grid[i- 1][j] == '1')
             {
                 uset.emplace(i - 1, j);
                 que.emplace(i - 1, j);
             }
-            if (i + 1 < rows && uset.count(pair(i + 1, j)) == 0 && grid[i + 1][j] == '1')
+            if (i + 1 < rows && uset.count(pair<int, int>(i + 1, j)) == 0 && grid[i + 1][j] == '1')
             {
                 uset.emplace(i + 1, j);
                 que.emplace(i + 1, j);
             }
-            if (j - 1 >= 0 && uset.count(pair(i, j - 1)) == 0 && grid[i][j - 1] == '1')
+            if (j - 1 >= 0 && uset.count(pair<int, int>(i, j - 1)) == 0 && grid[i][j - 1] == '1')
             {
                 uset.emplace(i, j - 1);
                 que.emplace(i, j - 1);
             }
-            if (j + 1 < cols && uset.count(pair(i, j + 1)) == 0 && grid[i][j + 1] == '1')
+            if (j + 1 < cols && uset.count(pair<int, int>(i, j + 1)) == 0 && grid[i][j + 1] == '1')
             {
                 uset.emplace(i, j + 1);
                 que.emplace(i, j + 1);

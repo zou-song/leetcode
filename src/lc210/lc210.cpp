@@ -54,7 +54,7 @@ int main(int argc, char const *argv[])
 		int numCourses = 0;
 		walkString(numCourses, line);
 		getline(cin, line);
-		vector<int> prerequisites;
+		vector<pair<int, int>> prerequisites;
 		walkString(prerequisites, line);
 		cout << toString(Solution().findOrder(numCourses, prerequisites)) << endl;
 	}

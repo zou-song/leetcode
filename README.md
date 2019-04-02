@@ -163,6 +163,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 208  |[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)|  Medium  |
 | 209  |[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|  Medium  |
 | 210  |[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)|  Medium  |
+| 211  |[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

@@ -7,6 +7,7 @@ public:
         int idx = 0;
         int len = nums.size();
         int sum = 0;
+        int beg = 0;
         for (int i = 0; i < len; ++i)
         {
             sum += nums[i];
@@ -16,21 +17,29 @@ public:
                 break;
             }
         }
-        if (sum < s)    return 0;
-        int cur_len = idx + 1;
-        ret = idx + 1;
+        if (sum < s)    return ret;
+        for (int i = 0; i <= idx; ++i)
+        {
+            if (sum - nums[i] < s)
+            {
+                break;
+            }
+            sum -= nums[i];
+            beg = i + 1;
+        }
+        ret = idx - beg + 1;
         for (int i = idx + 1; i < len; ++i)
         {
-            int beg = i - cur_len;
-            while (sum + nums[i] >= s)
+            sum += nums[i];
+            for (int j = beg; j <= i; ++j)
             {
-                sum -= nums[beg];
-                beg++;
+                if (sum - nums[j] < s)
+                    break;
+                sum -= nums[j];
+                beg = j + 1;
             }
-            sum += nums[--beg];
-            cur_len = i - beg + 1;
-            if (cur_len < ret)
-                ret = cur_len;
+            if (i - beg + 1 < ret)
+                ret = i - beg + 1;
         }
         return ret;
     }

@@ -59,6 +59,7 @@ public:
                     if (search_aux(p->_children[j], word, i + 1))
                         return true;
                 }
+				return false;
             }
         }
         if (p && p->_self_in)   return true;
@@ -92,11 +93,5 @@ public:
 
  int main(int argc, char const *argv[])
  {
- 	WordDictionary wd;
- 	wd.addWord("a");
- 	wd.addWord("a");
- 	bool ret1 = wd.search(".");
- 	bool ret2 = wd.search("aa");
- 	bool ret3 = wd.search(".a");
  	return 0;
  }

@@ -1,6 +1,35 @@
 #include "lc.h"
 
 class Solution {
+    struct DPKeeper
+    {
+        bool** _dp;
+        int _len;
+        
+        DPKeeper(int len) : _len(len)
+        {
+            if (len <= 0)   return;
+            _dp = new bool*[len];
+            for_each(_dp, _dp + len, [len](bool* &p){
+                p = new bool[len];
+                fill(p, p + len, false);
+            });
+        }
+        ~DPKeeper()
+        {
+            for (int i = 0; i < _len; ++i)
+            {
+                delete[] _dp[i];
+            }
+            if (_dp)
+                delete[] _dp;
+        }
+        
+        bool*& operator[] (size_t idx)
+        {
+            return _dp[idx];
+        }
+    };
 public:
     bool isPalindrome(const string& str, int idx1, int idx2)
     {
@@ -12,7 +41,7 @@ public:
         }
         return true;
     }
-    string longestPalindrome(string s) {
+    string longestPalindrome1(string s) {
         if (s.empty())  return s;
         int len = s.size();
         vector<int> dp(len);
@@ -45,6 +74,46 @@ public:
             }
         }
         return s.substr(maxIdx - maxLen + 1, maxLen);
+    }
+
+//dp
+    string longestPalindrome(string s) {
+        int start = 0;
+        int ret_len = 0;
+        int len = s.size();
+        if (len <= 0)   return "";
+        DPKeeper dp(len);
+        for (int i = 0; i < len; ++i)
+        {
+            for (int j = 0; j <= i; ++j)
+            {
+                if (i == j)
+                    dp[j][i] = true;
+                else if (j + 1 == i)
+                {
+                    if (s[i] == s[j])
+                        dp[j][i] = true;
+                    else
+                        dp[j][i] = false;
+                }
+                else
+                {
+                    if (dp[j + 1][i - 1] && s[i] == s[j])
+                        dp[j][i] = true;
+                    else
+                        dp[j][i] = false;
+                }
+                if (dp[j][i])
+                {
+                    if (i - j + 1 > ret_len)
+                    {
+                        ret_len = i - j + 1;
+                        start = j;
+                    }
+                }
+            }
+        }
+        return s.substr(start, ret_len);
     }
 };
 

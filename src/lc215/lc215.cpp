@@ -6,7 +6,7 @@ public:
         vector<int> tmp;
         for (int n : nums)
         {
-            if (tmp.size() < k)
+            if (tmp.size() < (size_t)k)
             {
                 tmp.push_back(n);
                 push_heap(tmp.begin(), tmp.end(), [](int lhs, int rhs){
@@ -15,7 +15,9 @@ public:
             }
             else if (n > tmp.front())
             {
-                pop_heap(tmp.begin(), tmp.end());
+                pop_heap(tmp.begin(), tmp.end(), [](int lhs, int rhs){
+						return lhs > rhs;
+				});
                 tmp.pop_back();
                 tmp.push_back(n);
                 push_heap(tmp.begin(), tmp.end(), [](int lhs, int rhs){

@@ -166,6 +166,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 211  |[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|  Medium  |
 | 212  |[Word Search II](https://leetcode.com/problems/word-search-ii/)|  Hard  |
 | 213  |[House Robber II](https://leetcode.com/problems/house-robber-ii/)|  Medium  |
+| 215  |[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

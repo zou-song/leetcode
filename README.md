@@ -173,6 +173,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 222  |[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)|  Medium  |
 | 223  |[Rectangle Area](https://leetcode.com/problems/rectangle-area/)|  Medium  |
 | 224  |[Basic Calculator](https://leetcode.com/problems/basic-calculator/)|  Hard  |
+| 225  |[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)|  Easy  |
 | 226  |[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |

@@ -175,6 +175,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 224  |[Basic Calculator](https://leetcode.com/problems/basic-calculator/)|  Hard  |
 | 225  |[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)|  Easy  |
 | 226  |[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|  Easy  |
+| 227  |[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

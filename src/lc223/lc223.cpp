@@ -24,29 +24,32 @@ public:
 int main(int argc, char const *argv[])
 {
 	string line;
-	int A = 0;
-	walkString(A, line);
-	getline(cin, line);
-	int B = 0;
-	walkString(B, line);
-	getline(cin, line);
-	int C = 0;
-	walkString(C, line);
-	getline(cin, line);
-	int D = 0;
-	walkString(D, line);
-	getline(cin, line);
-	int E = 0;
-	walkString(E, line);
-	getline(cin, line);
-	int F = 0;
-	walkString(F, line);
-	getline(cin, line);
-	int G = 0;
-	walkString(G, line);
-	getline(cin, line);
-	int H = 0;
-	walkString(H, line);
-	cout << toString(Solution().computeArea(A, B, C, D, E, F, G, H)) << endl;
+	while (getline(cin, line))
+	{	
+		int A = 0;
+		walkString(A, line);
+		getline(cin, line);
+		int B = 0;
+		walkString(B, line);
+		getline(cin, line);
+		int C = 0;
+		walkString(C, line);
+		getline(cin, line);
+		int D = 0;
+		walkString(D, line);
+		getline(cin, line);
+		int E = 0;
+		walkString(E, line);
+		getline(cin, line);
+		int F = 0;
+		walkString(F, line);
+		getline(cin, line);
+		int G = 0;
+		walkString(G, line);
+		getline(cin, line);
+		int H = 0;
+		walkString(H, line);
+		cout << toString(Solution().computeArea(A, B, C, D, E, F, G, H)) << endl;
+	}
 	return 0;
 }

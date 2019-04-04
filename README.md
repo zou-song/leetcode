@@ -171,6 +171,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 219  |[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|  Easy  |
 | 221  |[Maximal Square](https://leetcode.com/problems/maximal-square/)|  Medium  |
 | 222  |[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)|  Medium  |
+| 223  |[Rectangle Area](https://leetcode.com/problems/rectangle-area/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

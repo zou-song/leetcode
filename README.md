@@ -182,6 +182,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 231  |[Power of Two](https://leetcode.com/problems/power-of-two/)|  Easy  |
 | 232  |[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)|  Easy  |
 | 234  |[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)|  Easy  |
+| 235  |[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

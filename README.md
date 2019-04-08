@@ -179,6 +179,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 228  |[Summary Ranges](https://leetcode.com/problems/summary-ranges/)|  Medium  |
 | 229  |[Majority Element II](https://leetcode.com/problems/majority-element-ii/)|  Medium  |
 | 230  |[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)|  Medium  |
+| 231  |[Power of Two](https://leetcode.com/problems/power-of-two/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

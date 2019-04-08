@@ -11,14 +11,15 @@ public:
         {
             auto iter = hashmap.find(n);
             if (iter == hashmap.end())
+            {
                 hashmap[n] = 1;
-            else if (iter->second > thresh)
+                if (1 > thresh)
+                    ret.push_back(n);
+            }
+            else if (++(iter->second) == thresh + 1)
             {
                 ret.push_back(n);
-                ++(iter->second);
             }
-            else
-                ++(iter->second);
         }
         return ret;
     }

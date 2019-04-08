@@ -115,7 +115,7 @@ int main(int argc, char const *argv[])
 		int k = 0;
 		getline(cin, line);
 		walkString(k, line);
-		cout << toString(maxSlidingWindow(nums, k)) << endl;
+		cout << toString(Solution().maxSlidingWindow(nums, k)) << endl;
 	}
 	return 0;
 }

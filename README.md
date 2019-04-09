@@ -189,6 +189,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 238  |[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|  Medium  |
 | 239  |[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|  Hard  |
 | 240  |[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)|  Medium  |
+| 241  |[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

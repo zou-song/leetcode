@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
 	string line;
 	while (getline(cin, line))
 	{
-		vector<int> matrix;
+		vector<vector<int>> matrix;
 		walkString(matrix, line);
 		getline(cin, line);
 		int target = 0;

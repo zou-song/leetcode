@@ -6,7 +6,7 @@ public:
         int tmp = 0;
         for (int n : nums)
             tmp ^= n;
-        int x = (tmp ^ (tmp - 1) + 1) >> 2;
+        int x = ((tmp ^ (tmp - 1)) + 1) >> 1;
         int n1 = tmp;
         for (int n : nums)
             if (n & x)

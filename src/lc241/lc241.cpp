@@ -2,46 +2,9 @@
 
 class Solution {
 public:
-    void diffWaysToCompute(list<int>& nums, list<char>& ops, vector<int>& ret)
-    {
-        if (ops.empty())
-        {
-            ret.push_back(nums.front());
-            return;
-        }
-        auto niter = nums.begin();
-        for (auto oiter = ops.begin(); oiter != ops.end(); ++oiter, ++niter)
-        {
-            char op = *oiter;
-            oiter = ops.erase(oiter);
-            int n1 = *niter;
-            niter = nums.erase(niter);
-            int n2 = *niter;
-            niter = nums.erase(niter);
-            int n = 0;
-            switch (op)
-            {
-                case '+':
-                    n = n1 + n2;
-                    break;
-                case '-':
-                    n = n1 - n2;
-                    break;
-                case '*':
-                    n = n1 * n2;
-                    break;
-            }
-            nums.insert(niter, n);
-            diffWaysToCompute(nums, ops, ret);
-            oiter = ops.insert(oiter, op);
-            niter = nums.erase(niter);
-            niter = nums.insert(niter, n2);
-            niter = nums.insert(niter, n1);
-        }
-    }
     vector<int> diffWaysToCompute(string input) {
-        list<int> nums;
-        list<char> ops;
+        vector<int> nums;
+        vector<char> ops;
         int len = input.size();
         int idx = 0;
         while (idx < len)
@@ -59,9 +22,36 @@ public:
             else
                 idx++;
         }
-        vector<int> ret;
-        diffWaysToCompute(nums, ops, ret);
-        return ret;
+        int numsize = nums.size();
+        vector<vector<vector<int>>> dp(numsize);
+        for_each(dp.begin(), dp.end(), [numsize](vector<vector<int>> &vec){
+            vec.resize(numsize);
+        });
+        for (int i = 0; i < numsize; ++i)
+        {
+            dp[i][i].push_back(nums[i]);
+            for (int j = i - 1; j >= 0; --j)
+            {
+                for (int k = j; k < i; ++k)
+                {
+                    for (int n1 : dp[j][k])
+                        for (int n2 : dp[k + 1][i])
+                            switch (ops[k])
+                            {
+                                case '+':
+                                    dp[j][i].push_back(n1 + n2);
+                                    break;
+                                case '-':
+                                    dp[j][i].push_back(n1 - n2);
+                                    break;
+                                case '*':
+                                    dp[j][i].push_back(n1 * n2);
+                                    break;
+                            }
+                }
+            }
+        }
+        return dp[0][numsize - 1];
     }
 };
 

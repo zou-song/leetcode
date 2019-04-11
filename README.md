@@ -195,6 +195,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 258  |[Add Digits](https://leetcode.com/problems/add-digits/)|  Easy  |
 | 260  |[Single Number III](https://leetcode.com/problems/single-number-iii/)|  Medium  |
 | 263  |[Ugly Number](https://leetcode.com/problems/ugly-number/)|  Easy  |
+| 264  |[Ugly Number II](https://leetcode.com/problems/ugly-number-ii/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

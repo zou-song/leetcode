@@ -2,22 +2,22 @@
 
 class Solution {
 public:
-    const int BASESIZE = 3;
+#define BASESIZE 3
     int nthUglyNumber(int n) {
         if (n == 1) return 1;
-        vector<int> uns(1,1);
-        const int bases[BASESIZE] = {2, 3, 5};
+        vector<unsigned int> uns(1,1);
+        const unsigned int bases[BASESIZE] = {2, 3, 5};
         list<int> cmps = {0};
         int idxofcmps = 0;
-        while (uns.size() < n)
+        while (uns.size() < (size_t)n)
         {
             int idx = idxofcmps;
             auto iter = cmps.begin();
             auto min_iter = iter;
-            int min_num = INT_MAX;
-            while (idx < uns.size() && iter != cmps.end())
+            unsigned int min_num = INT_MAX;
+            while (idx < (int)uns.size() && iter != cmps.end())
             {
-                int num = uns[idx] * bases[*iter];
+                unsigned int num = uns[idx] * bases[*iter];
                 if (num < min_num)
                 {   
                     min_num = num;
@@ -28,6 +28,10 @@ public:
             }
             if (min_num <= uns.back())
             {
+				if (*min_iter == 0)
+				{
+					cmps.push_back(0);
+				}
                 if (++*min_iter >= BASESIZE)
                 {
                     cmps.erase(min_iter);

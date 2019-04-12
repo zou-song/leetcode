@@ -199,6 +199,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 268  |[Missing Number](https://leetcode.com/problems/missing-number/)|  Easy  |
 | 273  |[Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)|  Hard  |
 | 274  |[H-Index](https://leetcode.com/problems/h-index/)|  Medium  |
+| 275  |[H-Index II](https://leetcode.com/problems/h-index-ii/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

@@ -36,11 +36,11 @@ public:
             }
             else
             {
-                end = idx2 - 1;
                 need_add = end - idx2 + 1 + need_add;
+                end = idx2 - 1;
             }
         }
-        return len - end;
+        return len - end - 1;
     }
 };
 

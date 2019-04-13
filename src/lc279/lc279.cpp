@@ -10,17 +10,19 @@ public:
         int q = sqrt(n);
         if (q * q == n)
         {
-            solved_map[n] == 1;
+            solved_map[n] = 1;
             return 1;
         }
         int ret = n;
         for (int i = q; i >= 1; --i)
         {
-            int k = numSquares(n - q * q);
+            int k = numSquares(n - i * i);
             if (ret > 1 + k)
             {
                 ret = 1 + k;
             }
+            if (ret == 2)
+                break;
         }
         solved_map[n] = ret;
         return ret;

@@ -15,7 +15,6 @@ public:
             int end_idx = idx + 1;
             while (end_idx < str_len && str[end_idx] != ' ')
                 end_idx++;
-            idx = end_idx;
             string s = str.substr(idx, end_idx - idx);
             auto fwd_iter = fwd_map.find(c);
             if (fwd_iter != fwd_map.end())
@@ -31,7 +30,9 @@ public:
                 fwd_map[c] = s;
                 bwd_map[s] = c;
             }
+            idx = end_idx;
         }
+        if (idx < str_len)  return false;
         return true;
     }
 };

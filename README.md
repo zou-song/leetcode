@@ -206,6 +206,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 284  |[Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)|  Medium  |
 | 287  |[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)|  Medium  |
 | 289  |[Game of Life](https://leetcode.com/problems/game-of-life/)|  Medium  |
+| 290  |[Word Pattern](https://leetcode.com/problems/word-pattern/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

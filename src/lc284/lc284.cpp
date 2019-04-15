@@ -2,7 +2,7 @@
 
 // Below is the interface for Iterator, which is already defined for you.
 // **DO NOT** modify the interface for Iterator.
-typedef vector<int>::iterator vec_iterator;
+typedef vector<int>::const_iterator vec_iterator;
 class Iterator
 {
     vec_iterator _begin;
@@ -69,3 +69,8 @@ public:
         return Iterator::hasNext();
 	}
 };
+
+int main()
+{
+	return 0;
+}

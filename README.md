@@ -202,6 +202,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 275  |[H-Index II](https://leetcode.com/problems/h-index-ii/)|  Medium  |
 | 278  |[First Bad Version](https://leetcode.com/problems/first-bad-version/)|  Easy  |
 | 279  |[Perfect Squares](https://leetcode.com/problems/perfect-squares/)|  Medium  |
+| 283  |[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

@@ -211,6 +211,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 295  |[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)|  Hard  |
 | 297  |[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|  Hard  |
 | 299  |[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)|  Medium  |
+| 300  |[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

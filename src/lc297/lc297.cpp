@@ -6,13 +6,15 @@ class Codec {
     const string START_SYMBOL = "[";
     const string END_SYMBOL = "]";
     const string SEPERATOR = ",";
-    const string NULL_STRING = "null";
+    const string NULL_STRING = "N";
 public:
 
     // Encodes a tree to a single string.
     string serialize(TreeNode* root) {
         string ret;
         list<TreeNode*> bfs_list;
+        list<TreeNode*> tmp_list;
+        bool has_child = false;
         bfs_list.push_back(root);
         while (!bfs_list.empty())
         {
@@ -24,8 +26,10 @@ public:
                     ret = to_string(p->val);
                 else
                     ret = ret + SEPERATOR + to_string(p->val);
-                bfs_list.push_back(p->left);
-                bfs_list.push_back(p->right);
+                tmp_list.push_back(p->left);
+                tmp_list.push_back(p->right);
+                if (p->left || p->right)
+                    has_child = true;
             }
             else
             {
@@ -33,6 +37,11 @@ public:
                     ret = NULL_STRING;
                 else
                     ret = ret + SEPERATOR + NULL_STRING;
+            }
+            if (bfs_list.empty() && has_child)
+            {
+                swap(bfs_list, tmp_list);
+                has_child = false;
             }
         }
         return START_SYMBOL + ret + END_SYMBOL;
@@ -72,7 +81,7 @@ public:
                 }
                 else
                 {
-                    bfs_list.front()->left = p;
+                    bfs_list.front()->right = p;
                     left_flag = true;
                     bfs_list.pop_front();
                 }

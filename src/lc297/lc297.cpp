@@ -109,7 +109,7 @@ int main(int argc, char const *argv[])
 		walkString(btree, line);
 		Codec codec;
 		LCBinaryTree<int> codec_tree;
-		codec_tree.root = codec.deserialize(codec.serialize);
+		codec_tree.root = codec.deserialize(codec.serialize(btree.root));
 		cout << toString(codec_tree) << endl;
 	}
 	return 0;

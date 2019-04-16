@@ -208,6 +208,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 289  |[Game of Life](https://leetcode.com/problems/game-of-life/)|  Medium  |
 | 290  |[Word Pattern](https://leetcode.com/problems/word-pattern/)|  Easy  |
 | 292  |[Nim Game](https://leetcode.com/problems/nim-game/)|  Easy  |
+| 295  |[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)|  Hard  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

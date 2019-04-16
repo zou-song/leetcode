@@ -9,7 +9,7 @@ public:
 
 int main(int argc, char const *argv[])
 {
-	strinr line;
+	string line;
 	while (getline(cin, line))
 	{
 		int n = 0;

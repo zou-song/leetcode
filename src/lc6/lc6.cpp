@@ -10,7 +10,7 @@ public:
         for (char c : s)
         {
             vector<char> &v = vec[row];
-            while (v.size() <= col)
+            while (v.size() <= (size_t)col)
                 v.emplace_back('\0');
             vec[row][col] = c;
             if (ascend)
@@ -43,7 +43,7 @@ public:
         string ret;
         for (int i = 0; i < numRows; ++i)
         {
-            for (int j = 0; j < vec[i].size(); ++j)
+            for (int j = 0; j < (int)vec[i].size(); ++j)
                 if (vec[i][j] != '\0')
                     ret.push_back(vec[i][j]);
         }

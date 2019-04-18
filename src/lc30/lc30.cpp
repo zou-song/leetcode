@@ -59,7 +59,7 @@ public:
                     found_num++;
                 }
             }
-            if (found_num == words.size() && found_num != 0)
+            if ((size_t)found_num == words.size() && found_num != 0)
             {
                 ret.push_back(i);
             }

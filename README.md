@@ -36,6 +36,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 27  |[Remove Element](https://leetcode.com/problems/remove-element/)|  Easy  |
 | 28  |[Implement strStr()](https://leetcode.com/problems/implement-strstr/)|  Easy  |
 | 29  |[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)|  Medium  |
+| 30  |[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)|  Hard  |
 | 31  |[Next Permutation](https://leetcode.com/problems/next-permutation/)|  Medium  |
 | 32  |[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)|  Hard  |
 | 33  |[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|  Medium  |

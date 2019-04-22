@@ -19,7 +19,7 @@ public:
             board[i][j] = '0' + k;
             _grid_flags[grid_idx][k] = true;
             _rows_flags[i][k] = true;
-            _cols_flags[i][k] = true;
+            _cols_flags[j][k] = true;
             
             int x = i, y = j;
             while (x < 9)
@@ -47,7 +47,7 @@ public:
                 board[i][j] = '.';
                 _grid_flags[grid_idx][k] = false;
                 _rows_flags[i][k] = false;
-                _cols_flags[i][k] = false;
+                _cols_flags[j][k] = false;
             }
             else return true;
         }

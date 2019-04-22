@@ -19,7 +19,7 @@ public:
             if (idx < 0)
                 break;
             int j = len - 1;
-            while (nums[j] <= nums[idx])
+            while (vec[j] <= vec[idx])
                 j--;
             swap(vec[idx], vec[j]);
             int i = idx + 1, k = len - 1;

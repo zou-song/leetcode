@@ -50,6 +50,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 41  |[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|  Hard  |
 | 42  |[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|  Hard  |
 | 43  |[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|  Medium  |
+| 44  |[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)|  Hard  |
 | 45  |[Jump Game II](https://leetcode.com/problems/jump-game-ii/)|  Hard  |
 | 46  |[Permutations](https://leetcode.com/problems/permutations/)|  Medium  |
 | 48  |[Rotate Image](https://leetcode.com/problems/rotate-image/)|  Medium  |

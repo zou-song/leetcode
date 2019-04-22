@@ -56,6 +56,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 47  |[Permutations II](https://leetcode.com/problems/permutations-ii/)|  Medium  |
 | 48  |[Rotate Image](https://leetcode.com/problems/rotate-image/)|  Medium  |
 | 49  |[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|  Medium  |
+| 50  |[Pow(x, n)](https://leetcode.com/problems/powx-n/)|  Medium  |
 | 53  |[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|  Easy  |
 | 54  |[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|  Medium  |
 | 55  |[Jump Game](https://leetcode.com/problems/jump-game/)|  Medium  |

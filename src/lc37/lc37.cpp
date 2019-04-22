@@ -21,16 +21,23 @@ public:
             _rows_flags[i][k] = true;
             _cols_flags[i][k] = true;
             
-            int x = i, y = 0;
-            for (; x < 9; ++x)
+            int x = i, y = j;
+            while (x < 9)
             {
-                for (; y < 9; ++y)
+                while (y < 9)
                 {
                     if (board[x][y] == '.')
                         break;
+                    y++;
                 }
+                if (y >= 9)
+                {
+                    y = 0;
+                    x++;
+                }
+                else break;
             }
-            if (x >= 9 && y >= 9)
+            if (x >= 9 || y >= 9)
             {
                 return true;
             }
@@ -80,11 +87,15 @@ public:
             }
         }
         int x = 0, y = 0;
-        for (; x < 9; ++x)
+        for (x = 0; x < 9; ++x)
         {
-            for (; y < 9; ++y)
+            for (y = 0; y < 9; ++y)
+            {
                 if (board[x][y] == '.')
                     break;
+            }
+            if (y < 9)
+                break;
         }
         if (x < 9 && y < 9)
             solveSudoku(board, x, y);

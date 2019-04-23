@@ -37,17 +37,14 @@ public:
                             {
                                 cnt--;
                             }
-                            else
-                            {
-                                if (end - beg + 1 < len)
-                                {
-                                    len = end - beg + 1;
-                                    idx = beg;
-                                }
-                            }
                         }
                         else
                             beg++;
+						if (cnt >= tmapsz && end - beg + 1 < len)
+						{
+							len = end - beg + 1;
+							idx = beg;
+						}
                     }
                 }
             }

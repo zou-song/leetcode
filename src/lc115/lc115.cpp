@@ -31,8 +31,8 @@ public:
     int numDistinct(string s, string t) {
         int tlen = t.size();
         int slen = s.size();
-        vector<vector<int>> dp(slen + 1);
-        for_each(dp.begin(), dp.end(), [tlen](vector<int>& vec){
+        vector<vector<unsigned int>> dp(slen + 1);
+        for_each(dp.begin(), dp.end(), [tlen](vector<unsigned int>& vec){
             vec.resize(tlen + 1);
             fill(vec.begin(), vec.end(), 0);
         });
@@ -41,7 +41,7 @@ public:
             dp[i][0] = 1;
             for (int j = 0; j < tlen; ++j)
             {
-                if (s[i] == s[j])
+                if (s[i] == t[j])
                 {
                     dp[i + 1][j + 1] = dp[i][j] + dp[i][j + 1];
                 }
@@ -64,7 +64,7 @@ int main(int argc, char const *argv[])
 		walkString(s, line);
 		getline(cin, line);
 		walkString(t, line);
-		cout << toString(numDistinct(s, t)) << endl;
+		cout << toString(Solution().numDistinct(s, t)) << endl;
 	}
 	return 0;
 }

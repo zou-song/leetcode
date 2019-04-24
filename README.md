@@ -93,6 +93,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 84  |[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)|  Hard  |
 | 85  |[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)|  Hard  |
 | 86  |[Partition List](https://leetcode.com/problems/partition-list/)|  Medium  |
+| 87  |[Scramble String](https://leetcode.com/problems/scramble-string/)|  Hard  |
 | 88  |[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|  Easy  |
 | 89  |[Gray Code](https://leetcode.com/problems/gray-code/)|  Medium  |
 | 90  |[Subsets II](https://leetcode.com/problems/subsets-ii/)|  Medium  |

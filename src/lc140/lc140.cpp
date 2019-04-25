@@ -103,7 +103,6 @@ public:
         if (!canSolve(s))   return ret;
         list<pair<int, string>> dp;
         dp.emplace_back(-1, "");
-        int idx = 0;
         int len = s.size();   
         while (!dp.empty())
         {

@@ -4,76 +4,75 @@ class Solution {
 public:
     int maxProduct(vector<int>& nums) {
         int len = nums.size();
-        typedef pair<long long, int> PAIR;
-        vector<PAIR> dp(len);
         if (len <= 0)   return 0;
-        dp.emplace_back(nums[0], 1);
-        long long ret = nums[0];
+        vector<long long> dp(len);
+        dp[0] = nums[0];
+        long long ret = dp[0];
         for (int i = 1; i < len; ++i)
         {
             if (nums[i] == 0)
             {
-                dp[i] = PAIR(0, 1);
+                dp[i] = 0;
             }
             else if (nums[i] > 0)
             {
-                long long tmp = nums[i];
-                dp[i] = PAIR(tmp, 1);
                 int idx = i - 1;
-                bool neg = false;
+                dp[i] = nums[i];
+                long long tmp = nums[i];
                 while (idx >= 0)
                 {
-                    if (dp[idx].first == 0)
+                    if (dp[idx] > 0 && tmp > 0)
+                    {
+                        dp[i] = tmp * dp[idx];
+                        break;
+                    }
+                    else if (dp[idx] == 0)
                     {
                         break;
                     }
-                    else if (dp[idx].first < 0)
+                    else
                     {
-                        neg = !neg;
+                        tmp *= nums[idx--];
+                        if (tmp > 0)
+                        {
+                            dp[i] = tmp;
+                        }
                     }
-                    tmp *= dp[idx].first;
-                    if (!neg)
-                    {
-                        dp[i] = PAIR(tmp, i - idx + dp[idx].second);
-                    }
-                    idx = idx - dp[idx].second;
                 }
             }
             else
             {
-                long long tmp = nums[i];
-                dp[i] = PAIR(tmp, 1);
                 int idx = i - 1;
-                bool neg = true;
+                dp[i] = nums[i];
+                long long tmp = nums[i];
                 while (idx >= 0)
                 {
-                    if (dp[idx].first == 0)
+                    if (dp[idx] > 0 && tmp > 0)
                     {
-                        if (dp[i].first > 0)
+                        dp[i] = tmp * dp[idx];
+                        break;
+                    }
+                    else if (dp[idx] == 0)
+                    {
+                        if (dp[i] < 0)
                         {
-                            break;
+                            dp[i] = 0;
                         }
-                        else
+                        break;
+                    }
+                    else
+                    {
+                        tmp *= nums[idx--];
+                        if (tmp > 0)
                         {
-                            dp[i] = PAIR(0, i - idx + dp[idx].second);
-                            break;
+                            dp[i] = tmp;
                         }
                     }
-                    else if (dp[idx].first < 0)
-                    {
-                        neg = !neg;
-                    }
-                    tmp *= dp[idx].first;
-                    if (!neg)
-                    {
-                        dp[i] = PAIR(tmp, i - idx + dp[idx].second);
-                    }
-                    idx = idx - dp[idx].second;
                 }
             }
-            if (ret < dp[i].first)
+            if (ret < dp[i])
             {
-                ret = dp[i].first;
+                ret = dp[i];
             }
         }
         return ret;

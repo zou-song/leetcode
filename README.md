@@ -164,6 +164,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 155  |[Min Stack](https://leetcode.com/problems/min-stack/)|  Easy  |
 | 160  |[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)|  Easy  |
 | 162  |[Find Peak Element](https://leetcode.com/problems/find-peak-element/)|  Medium  |
+| 164  |[Maximum Gap](https://leetcode.com/problems/maximum-gap/)|  Hard  |
 | 165  |[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/)|  Medium  |
 | 167  |[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|  Easy  |
 | 168  |[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|  Easy  |

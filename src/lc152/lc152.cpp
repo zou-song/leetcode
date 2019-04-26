@@ -2,7 +2,7 @@
 
 class Solution {
 public:
-    int maxProduct(vector<int>& nums) {
+    int maxProduct1(vector<int>& nums) {
         int len = nums.size();
         if (len <= 0)   return 0;
         vector<long long> dp(len);
@@ -26,7 +26,7 @@ public:
                         dp[i] = tmp * dp[idx];
                         break;
                     }
-                    else if (dp[idx] == 0)
+                    else if (nums[idx] == 0)
                     {
                         break;
                     }
@@ -52,7 +52,7 @@ public:
                         dp[i] = tmp * dp[idx];
                         break;
                     }
-                    else if (dp[idx] == 0)
+                    else if (nums[idx] == 0)
                     {
                         if (dp[i] < 0)
                         {
@@ -74,6 +74,20 @@ public:
             {
                 ret = dp[i];
             }
+        }
+        return ret;
+    }
+    int maxProduct(vector<int>& nums) {
+        int len = nums.size();
+        if (len <= 0)   return 0;
+        long long tmax = nums[0], tmin = nums[0];
+        long long ret = nums[0];
+        for (int i = 1; i < len; ++i)
+        {
+            long long tmp = tmax;
+            tmax = max((long long)nums[i], max(tmax * nums[i], tmin * nums[i]));
+            tmin = min((long long)nums[i], min(tmp * nums[i], tmin * nums[i]));
+            ret = max(tmax, max(tmin, ret));
         }
         return ret;
     }

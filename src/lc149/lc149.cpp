@@ -3,15 +3,23 @@
 class Solution {
     struct Coeff
     {//ax + by + c = 0;
-        int a;
-        int b;
-        int c;
+        long long a;
+        long long b;
+        long long c;
     };
     struct Hasher
     {
         size_t operator()(const Coeff& c) const
         {
-            return hash<int>()(c.a) ^ hash<int>()(c.b) ^ hash<int>()(c.c);
+            if (c.b == 0)
+            {
+                if (c.a == 0)
+                {
+                    return hash<int>()(0);
+                }
+                return hash<double>()(1.0 * c.c / c.a);
+            }
+            return hash<double>()(1.0 * c.a / c.b) ^ hash<double>()(1.0 * c.c / c.b);
         }
     };
     struct Equaller
@@ -27,6 +35,10 @@ class Solution {
 public:
     int maxPoints(vector<vector<int>>& points) {
         int len = points.size();
+        if (len == 1)
+        {
+            return 1;
+        }
         unordered_map<Coeff, int, Hasher, Equaller> hashmap;
         for (int i = 0; i < len; ++i)
         {
@@ -35,14 +47,24 @@ public:
                 Coeff c;
                 c.a = points[i][1] - points[j][1];
                 c.b = points[j][0] - points[i][0];
-                c.c = points[i][0] * points[j][1] - points[j][0] * points[i][1];
+                c.c = (long long)points[i][0] * points[j][1] - (long long)points[j][0] * points[i][1];
                 hashmap[c]++;
             }
         }
         auto iter = max_element(hashmap.begin(), hashmap.end(), [](const pair<Coeff, int>& lhs, const pair<Coeff, int>& rhs){
             return lhs.second < rhs.second;
         });
-        return iter->second;
+        if (iter == hashmap.end())
+            return 0;
+        int ret = 0;
+        for (auto &p : points)
+        {
+            if (iter->first.a * p[0] + iter->first.b * p[1] + iter->first.c == 0)
+            {
+                ret++;
+            }
+        }
+        return ret;
     }
 };
 

@@ -176,6 +176,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 174  |[Dungeon Game](https://leetcode.com/problems/dungeon-game/)|  Hard  |
 | 175  |[Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)|  Easy  |
 | 176  |[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)|  Easy  |
+| 177  |[Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)|  Medium  |
 | 179  |[Largest Number](https://leetcode.com/problems/largest-number/)|  Medium  |
 | 187  |[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)|  Medium  |
 | 189  |[Rotate Array](https://leetcode.com/problems/rotate-array/)|  Easy  |

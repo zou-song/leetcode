@@ -173,6 +173,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 171  |[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)|  Easy  |
 | 172  |[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)|  Easy  |
 | 173  |[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|  Medium  |
+| 174  |[Dungeon Game](https://leetcode.com/problems/dungeon-game/)|  Hard  |
 | 179  |[Largest Number](https://leetcode.com/problems/largest-number/)|  Medium  |
 | 187  |[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)|  Medium  |
 | 189  |[Rotate Array](https://leetcode.com/problems/rotate-array/)|  Easy  |

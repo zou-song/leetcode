@@ -190,6 +190,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 189  |[Rotate Array](https://leetcode.com/problems/rotate-array/)|  Easy  |
 | 190  |[Reverse Bits](https://leetcode.com/problems/reverse-bits/)|  Easy  |
 | 191  |[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|  Easy  |
+| 192  |[Word Frequency](https://leetcode.com/problems/word-frequency/)|  Medium  |
 | 198  |[House Robber](https://leetcode.com/problems/house-robber/)|  Easy  |
 | 199  |[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)|  Medium  |
 | 200  |[Number of Islands](https://leetcode.com/problems/number-of-islands/)|  Medium  |

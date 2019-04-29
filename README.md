@@ -179,6 +179,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 177  |[Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)|  Medium  |
 | 178  |[Rank Scores](https://leetcode.com/problems/rank-scores/)|  Medium  |
 | 179  |[Largest Number](https://leetcode.com/problems/largest-number/)|  Medium  |
+| 180  |[Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/)|  Medium  |
 | 187  |[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)|  Medium  |
 | 189  |[Rotate Array](https://leetcode.com/problems/rotate-array/)|  Easy  |
 | 190  |[Reverse Bits](https://leetcode.com/problems/reverse-bits/)|  Easy  |

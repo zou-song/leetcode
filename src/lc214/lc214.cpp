@@ -18,22 +18,15 @@ public:
             }
             next[i] = k + 1;
         }
-        int idx = 0;
-        for (int i = len + 1; i < 2 * len + 1; ++i)
-        {
-            if (next[i] > idx)
-            {
-                idx = next[i];
-            }
-        }
+        int idx = next[2 * len];
         tmp.clear();
         int i = len - 1;
-        while (i >= idx)
+        while (i > idx)
         {
             tmp += s[i--];
         }
         tmp += s;
-        return s;
+        return tmp;
     }
 };
 

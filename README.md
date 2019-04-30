@@ -195,6 +195,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 194  |[Transpose File](https://leetcode.com/problems/transpose-file/)|  Medium  |
 | 195  |[Tenth Line](https://leetcode.com/problems/tenth-line/)|  Easy  |
 | 196  |[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|  Easy  |
+| 197  |[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|  Easy  |
 | 198  |[House Robber](https://leetcode.com/problems/house-robber/)|  Easy  |
 | 199  |[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)|  Medium  |
 | 200  |[Number of Islands](https://leetcode.com/problems/number-of-islands/)|  Medium  |

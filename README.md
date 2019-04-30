@@ -212,6 +212,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 211  |[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|  Medium  |
 | 212  |[Word Search II](https://leetcode.com/problems/word-search-ii/)|  Hard  |
 | 213  |[House Robber II](https://leetcode.com/problems/house-robber-ii/)|  Medium  |
+| 214  |[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/)|  Hard  |
 | 215  |[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|  Medium  |
 | 217  |[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|  Easy  |
 | 219  |[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|  Easy  |

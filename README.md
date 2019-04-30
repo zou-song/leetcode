@@ -216,6 +216,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 215  |[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|  Medium  |
 | 216  |[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)|  Medium  |
 | 217  |[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|  Easy  |
+| 218  |[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)|  Hard  |
 | 219  |[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|  Easy  |
 | 221  |[Maximal Square](https://leetcode.com/problems/maximal-square/)|  Medium  |
 | 222  |[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)|  Medium  |

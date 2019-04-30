@@ -14,15 +14,19 @@ public:
         for (int i = 1; i < k; ++i)
         {
             vector<PAIR> tmp;
-            for (auto v : vec)
+            for (auto &v : vec)
             {
                 if (v.second > n)   continue;
                 int back = v.first.back();
                 for (int j = back + 1; j <= 9; ++j)
                 {
-                    v.first.push_back(j);
-                    v.second += j;
-                    tmp.push_back(v);
+					PAIR pr = v;
+                    pr.first.push_back(j);
+                    pr.second += j;
+					if (pr.second <= n)
+					{
+						tmp.push_back(pr);
+					}
                 }
             }
             swap(vec, tmp);

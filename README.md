@@ -214,6 +214,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 213  |[House Robber II](https://leetcode.com/problems/house-robber-ii/)|  Medium  |
 | 214  |[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/)|  Hard  |
 | 215  |[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|  Medium  |
+| 216  |[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)|  Medium  |
 | 217  |[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|  Easy  |
 | 219  |[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|  Easy  |
 | 221  |[Maximal Square](https://leetcode.com/problems/maximal-square/)|  Medium  |

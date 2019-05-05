@@ -5,7 +5,7 @@ public:
     bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t) {
         int len = nums.size();
         if (len <= 0)   return false;
-        if (k <= 0 || t <= 0) return false;
+        if (k <= 0 || t < 0) return false;
         unordered_map<long long, long long> hashmap;
         for (int i = 0; i < len; ++i)
         {
@@ -25,11 +25,12 @@ public:
             {
                 return true;
             }
-            if (hashmap.size() >= k)
+            if (hashmap.size() >= (size_t)k)
             {
                 long long rmidx = ((long long)nums[i - k] - INT_MIN) / ((long long)t + 1);
                 hashmap.erase(rmidx);
             }
+			hashmap[idx] = n;
         }
         return false;
     }

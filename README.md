@@ -244,6 +244,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 257  |[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|  Easy  |
 | 258  |[Add Digits](https://leetcode.com/problems/add-digits/)|  Easy  |
 | 260  |[Single Number III](https://leetcode.com/problems/single-number-iii/)|  Medium  |
+| 262  |[Trips and Users](https://leetcode.com/problems/trips-and-users/)|  Hard  |
 | 263  |[Ugly Number](https://leetcode.com/problems/ugly-number/)|  Easy  |
 | 264  |[Ugly Number II](https://leetcode.com/problems/ugly-number-ii/)|  Medium  |
 | 268  |[Missing Number](https://leetcode.com/problems/missing-number/)|  Easy  |

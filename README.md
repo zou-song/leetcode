@@ -231,6 +231,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 230  |[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)|  Medium  |
 | 231  |[Power of Two](https://leetcode.com/problems/power-of-two/)|  Easy  |
 | 232  |[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)|  Easy  |
+| 233  |[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)|  Hard  |
 | 234  |[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)|  Easy  |
 | 235  |[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|  Easy  |
 | 236  |[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|  Medium  |

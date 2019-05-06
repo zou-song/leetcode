@@ -21,10 +21,10 @@ public:
             }
             else
             {
-                for (int i = 0; i < len - 1; ++i)
+                for (int i = 0; i < len; ++i)
                 {
                     string tmp = num.substr(0, i + 1);
-                    long long nll = stoi(tmp);
+                    long long nll = stoll(tmp);
                     if (nll > INT_MAX)
                     {
                         break;
@@ -34,7 +34,7 @@ public:
             }
             return;
         }
-        if (num[idx] == 0)
+        if (num[idx] == '0')
         {
             string tmp = str + "+" + num[idx];
             func(num, idx + 1, target, cur, 0, '+', tmp, ret);
@@ -80,8 +80,10 @@ public:
             {
                 case '+':
                     a = cur - mul + mul * nll;
+                    break;
                 case '-':
                     a = cur + mul - mul * nll;
+                    break;
             }
             if (a >= INT_MIN && a <= INT_MAX && mul * nll <= INT_MAX)
             {

@@ -248,6 +248,19 @@ template<> void walkString(unsigned int &n, string &str)
     	str = str.substr(idx);
 }
 
+template<> void walkString(double &d, string &str)
+{
+    trimLeftTrailingSpaces(str);
+    trimRightTrailingSpaces(str);
+	size_t idx = 0;
+	d = stod(str, &idx);
+	idx = str.find_first_not_of(", ", idx);
+	if (idx == string::npos)
+		str = "";
+	else
+		str = str.substr(idx);
+}
+
 template<> void walkString(char &s, string &str)
 {
     trimLeftTrailingSpaces(str);
@@ -457,6 +470,11 @@ template<> string toString(const unsigned int &n)
 template<> string toString(const char &c)
 {
     return '"' + string(1, c) + '"';
+}
+
+template<> string toString(const double &d)
+{
+    return '"' + to_string(d) + '"';
 }
 
 template<> string toString(const string &str)

@@ -253,6 +253,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 275  |[H-Index II](https://leetcode.com/problems/h-index-ii/)|  Medium  |
 | 278  |[First Bad Version](https://leetcode.com/problems/first-bad-version/)|  Easy  |
 | 279  |[Perfect Squares](https://leetcode.com/problems/perfect-squares/)|  Medium  |
+| 282  |[Expression Add Operators](https://leetcode.com/problems/expression-add-operators/)|  Hard  |
 | 283  |[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|  Easy  |
 | 284  |[Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)|  Medium  |
 | 287  |[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)|  Medium  |

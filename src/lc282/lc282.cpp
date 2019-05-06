@@ -2,75 +2,97 @@
 
 class Solution {
 public:
-    vector<string> addOperators(string num, int target) {
-        if (num.empty())    return {};
-        typedef unordered_map<string, int> DPELEM;
+    void func(const string& num, int idx, int target, int cur, int mul, char oper, const string& str, vector<string>& ret)
+    {
         int len = num.size();
-        vector<DPELEM> dp(len);
-        dp[0][num.substr(0, 1)] = num[0] - '0';
-        for (int i = 1; i < len; ++i)
+        if (idx >= len)
         {
-            string s = num.substr(0, i + 1);
-            if (s[0] != '0')
-                dp[i][s] = stoi(s);
-            for (int j = 1; j <= i; ++j)
+            if (cur == target)
             {
-                string str = num.substr(j, i - j + 1);
-                if (str.size() > 1 && str[0] == '0')
-                    continue;
-                int rnum = stoi(str);
-                auto &elem = dp[j - 1];
-                for (auto &pr : elem)
-                {
-                    string key = pr.first + "+" + str;
-                    int val = pr.second + rnum;
-                    dp[i][key] = val;
-                    key = pr.first + "-" + str;
-                    val = pr.second - rnum;
-                    dp[i][key] = val;
-                    key = pr.first + "*" + str;
-                    int k = pr.first.size() - 1;
-                    int mul = 1;
-                    char flag = '*';
-                    while (k >= 0)
-                    {
-                        if (isdigit(pr.first[k]))
-                        {
-                            mul *= k;
-                            k--;
-                        }
-                        else if (pr.first[k] == '*')
-                        {
-                            k--;
-                        }
-                        else
-                        {
-                            flag = pr.first[k];
-                            break;
-                        }
-                    }
-                    if (flag == '+')
-                    {
-                        val = pr.second - mul + mul * rnum;
-                    }
-                    else if (flag == '-')
-                    {
-                        val = pr.second + mul - mul * rnum;
-                    }
-                    else
-                    {
-                        val = mul * rnum;
-                    }
-                    dp[i][key] = val;
-                }
-            }   
+                ret.push_back(str);
+            }
+            return;
         }
+        if (idx == 0)
+        {
+            if (num[0] == '0')
+            {
+                func(num, 1, target, 0, 0, '+', "0", ret);
+            }
+            else
+            {
+                for (int i = 0; i < len - 1; ++i)
+                {
+                    string tmp = num.substr(0, i + 1);
+                    long long nll = stoi(tmp);
+                    if (nll > INT_MAX)
+                    {
+                        break;
+                    }
+                    func(num, i + 1, target, nll, nll, '+', tmp, ret);
+                }
+            }
+            return;
+        }
+        if (num[idx] == 0)
+        {
+            string tmp = str + "+" + num[idx];
+            func(num, idx + 1, target, cur, 0, '+', tmp, ret);
+            tmp = str + "-" + num[idx];
+            func(num, idx + 1, target, cur, 0, '-', tmp, ret);
+            tmp = str + "*" + num[idx];
+            switch (oper)
+            {
+                case '+':
+                    cur = cur - mul + mul * 0;
+                    mul = 0;
+                    break;
+                case '-':
+                    cur = cur + mul - mul * 0;
+                    mul = 0;
+                    break;
+            }
+            func(num, idx + 1, target, cur, mul, oper, tmp, ret);
+            return;
+        }
+        for (int i = idx; i < len; ++i)
+        {
+            string s = num.substr(idx, i - idx + 1);
+            long long nll = stoll(s);
+            if (nll > INT_MAX)
+            {
+                break;
+            }
+            string tmp = str + "+" + s;
+            long long a = cur + nll;
+            if (a <= INT_MAX)
+            {
+                func(num, i + 1, target, a, nll, '+', tmp, ret);
+            }
+            tmp = str + "-" + s;
+            a = cur - nll;
+            if (a >= INT_MIN)
+            {
+                func(num, i + 1, target, a, nll, '-', tmp, ret);
+            }
+            tmp = str + "*" + s;
+            switch (oper)
+            {
+                case '+':
+                    a = cur - mul + mul * nll;
+                case '-':
+                    a = cur + mul - mul * nll;
+            }
+            if (a >= INT_MIN && a <= INT_MAX && mul * nll <= INT_MAX)
+            {
+                func(num, i + 1, target, a, mul * nll, oper, tmp, ret);
+            }
+        }
+    }
+    
+    vector<string> addOperators(string num, int target) {
         vector<string> ret;
-        DPELEM &elem = dp[len - 1];
-        for_each(elem.begin(), elem.end(), [&ret, target](const pair<string, int>& pr){
-            if (pr.second == target)
-                ret.push_back(pr.first);
-        });
+        func(num, 0, target, 0, 0, '+', "", ret);
         return ret;
     }
 };

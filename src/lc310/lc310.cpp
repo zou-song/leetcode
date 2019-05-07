@@ -4,45 +4,45 @@ class Solution {
     typedef list<int> EDGES;
 public:
     vector<int> findMinHeightTrees(int n, vector<vector<int>>& edges) {
-        vector<EDGES> edge_list(n);
+        if (n == 1)
+        {
+            return {0};
+        }
+        unordered_map<int, EDGES> trees;
         for (auto &vec : edges)
         {
-            edge_list[vec[0]].emplace_back(vec[1]);
-            edge_list[vec[1]].emplace_back(vec[0]);
+            trees[vec[0]].emplace_back(vec[1]);
+            trees[vec[1]].emplace_back(vec[0]);
         }
-        int height = n;
-        vector<int> ret;
-        for (int i = 0; i < n; ++i)
+        queue<int> que;
+        for (auto iter = trees.begin(); iter != trees.end(); ++iter)
         {
-            int h = 0;
-            vector<bool> labels(n, true);
-            labels[i] = false;
-            list<int> children(edge_list[i].begin(), edge_list[i].end());
-            while (!children.empty())
+            if (iter->second.size() == 1)
             {
-                list<int> tmp;
-                for (int j : children)
+                que.push(iter->first);
+            }
+        }
+        while (trees.size() > 2)
+        {
+            int que_sz = que.size();
+            while (que_sz > 0)
+            {
+                int e = que.front();
+                que.pop();
+                auto iter = trees.find(trees[e].front());
+                iter->second.remove(e);
+                if (iter->second.size() == 1)
                 {
-                    for (int k : edge_list[j])
-                    {
-                        if (labels[k])
-                        {
-                            tmp.emplace_back(k);
-                        }
-                    }
-                    labels[j] = false;
+                    que.push(iter->first);
                 }
-                swap(children, tmp);
-                h++;
+                que_sz--;
+                trees.erase(e);
             }
-            if (h < height)
-            {
-                ret = {i};
-            }
-            else if (h == height)
-            {
-                ret.emplace_back(i);
-            }
+        }
+        vector<int> ret;
+        for (auto &pr : trees)
+        {
+            ret.push_back(pr.first);
         }
         return ret;
     }

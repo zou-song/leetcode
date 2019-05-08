@@ -272,6 +272,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 310  |[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)|  Medium  |
 | 318  |[Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/)|  Medium  |
 | 319  |[Bulb Switcher](https://leetcode.com/problems/bulb-switcher/)|  Medium  |
+| 322  |[Coin Change](https://leetcode.com/problems/coin-change/)|  Medium  |
 | 342  |[Power of Four](https://leetcode.com/problems/power-of-four/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |

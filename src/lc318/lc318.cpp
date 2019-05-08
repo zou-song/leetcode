@@ -20,7 +20,7 @@ public:
         {
             for (int j = i + 1; j < len; ++j)
             {
-                if (vec[i].first & vec[j].first == 0)
+                if ((vec[i].first & vec[j].first) == 0)
                 {
                     int mul = vec[i].second * vec[j].second;
                     ret = (mul > ret) ? mul : ret;

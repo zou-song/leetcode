@@ -22,7 +22,7 @@ public:
         }
         while (sum < (unsigned int)n)
         {
-            if (idx < len && nums[idx] <= sum + 1)
+            if (idx < len && (unsigned int)nums[idx] <= sum + 1)
             {
                 sum += nums[idx++];
             }

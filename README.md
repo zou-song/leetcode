@@ -275,6 +275,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 322  |[Coin Change](https://leetcode.com/problems/coin-change/)|  Medium  |
 | 326  |[Power of Three](https://leetcode.com/problems/power-of-three/)|  Easy  |
 | 328  |[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)|  Medium  |
+| 330  |[Patching Array](https://leetcode.com/problems/patching-array/)|  Hard  |
 | 331  |[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/)|  Medium  |
 | 342  |[Power of Four](https://leetcode.com/problems/power-of-four/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |

@@ -18,15 +18,16 @@
  * };
  */
 
-clas NestedInteger {
+class NestedInteger {
+	vector<NestedInteger> _tmp;
 public:
 	bool isInteger() const { return true; }
 	int getInteger() const { return 0; }
-	const vector<NestedInteger>& getList() const { return {}; }
+	const vector<NestedInteger>& getList() const { return _tmp; }
 };
 
 class NestedIterator {
-    typedef vector<NestedInteger>::iterator Iterator;
+    typedef vector<NestedInteger>::const_iterator Iterator;
     struct IterElem
     {
         Iterator _iter;

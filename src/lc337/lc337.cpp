@@ -33,7 +33,7 @@ int main(int argc, char const *argv[])
 	{
 		LCBinaryTree<int> btree;
 		walkString(btree, line);
-		cout << toString(Solution().rob(btree.root));
+		cout << toString(Solution().rob(btree.root)) << endl;
 	}
 	return 0;
 }

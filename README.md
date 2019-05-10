@@ -278,6 +278,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 330  |[Patching Array](https://leetcode.com/problems/patching-array/)|  Hard  |
 | 331  |[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/)|  Medium  |
 | 334  |[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)|  Medium  |
+| 337  |[House Robber III](https://leetcode.com/problems/house-robber-iii/)|  Medium  |
 | 342  |[Power of Four](https://leetcode.com/problems/power-of-four/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |

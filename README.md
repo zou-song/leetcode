@@ -282,6 +282,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 338  |[Counting Bits](https://leetcode.com/problems/counting-bits/)|  Medium  |
 | 341  |[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)|  Medium  |
 | 342  |[Power of Four](https://leetcode.com/problems/power-of-four/)|  Easy  |
+| 343  |[Integer Break](https://leetcode.com/problems/integer-break/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

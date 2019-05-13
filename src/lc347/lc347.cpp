@@ -19,7 +19,7 @@ public:
         priority_queue<ELEM, vector<ELEM>, cmp> pri_que;
         for (auto iter = hashmap.begin(); iter != hashmap.end(); ++iter)
         {
-            if (pri_que.size() < k)
+            if (pri_que.size() < (size_t)k)
             {
                 pri_que.push(*iter);
             }

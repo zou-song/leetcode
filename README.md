@@ -284,6 +284,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 342  |[Power of Four](https://leetcode.com/problems/power-of-four/)|  Easy  |
 | 343  |[Integer Break](https://leetcode.com/problems/integer-break/)|  Medium  |
 | 344  |[Reverse String](https://leetcode.com/problems/reverse-string/)|  Easy  |
+| 345  |[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

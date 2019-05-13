@@ -22,3 +22,15 @@ public:
         return sum;
     }
 };
+
+int main(int argc, char const *argv[])
+{
+    string line;
+    while (getline(cin, line))
+    {
+        int n = 0;
+        walkString(n, line);
+        cout << toString(Solution().countNumbersWithUniqueDigits(n)) << endl;
+    }
+    return 0;
+}

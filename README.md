@@ -294,6 +294,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 357  |[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)|  Medium  |
 | 367  |[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)|  Easy  |
 | 368  |[Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/)|  Medium  |
+| 371  |[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

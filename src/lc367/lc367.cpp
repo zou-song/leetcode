@@ -3,11 +3,11 @@
 class Solution {
 public:
     bool isPerfectSquare(int num) {
-        unsigned int xn = num / 2 + 1;
-        unsigned int pre1 = xn, pre2 = xn;
+        long long xn = num / 2 + 1;
+        long long pre1 = xn, pre2 = xn;
         while (true)
         {
-            if (xn * xn == num)
+            if (xn * xn == (long long)num)
             {
                 return true;
             }
@@ -19,7 +19,7 @@ public:
                 return false;
             }
         }
-        return xn * xn == num;
+        return false;
     }
 };
 

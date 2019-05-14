@@ -296,6 +296,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 368  |[Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/)|  Medium  |
 | 371  |[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)|  Easy  |
 | 372  |[Super Pow](https://leetcode.com/problems/super-pow/)|  Medium  |
+| 373  |[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

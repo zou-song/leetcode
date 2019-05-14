@@ -3,31 +3,23 @@
 class Solution {
 public:
     bool isPerfectSquare(int num) {
-        unsigned int xn = num;
-        unsigned int diff = UINT_MAX;
-        while (xn > 0)
+        unsigned int xn = num / 2 + 1;
+        unsigned int pre1 = xn, pre2 = xn;
+        while (true)
         {
-            unsigned int tmp = 0;
-            if (xn * xn > num)
-            {
-                tmp = xn * xn - num;
-            }
-            else if (xn * xn == num)
+            if (xn * xn == num)
             {
                 return true;
             }
-            else
-            {
-                tmp = num - xn * xn;
-            }
-            if (tmp > diff)
+            pre2 = pre1;
+            pre1 = xn;
+            xn = (xn * xn + num) / (2 * xn);
+            if (xn == pre1 || xn == pre2)
             {
                 return false;
             }
-            diff = tmp;
-            xn = (xn * xn + num) / (2 * xn);
         }
-        return false;
+        return xn * xn == num;
     }
 };
 

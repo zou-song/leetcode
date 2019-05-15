@@ -298,6 +298,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 372  |[Super Pow](https://leetcode.com/problems/super-pow/)|  Medium  |
 | 373  |[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)|  Medium  |
 | 374  |[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)|  Easy  |
+| 375  |[Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

@@ -22,6 +22,7 @@ public:
 int main(int argc, char const *argv[])
 {
 	string ransomNote, magazine;
+	string line;
 	while (getline(cin, line))
 	{
 		walkString(ransomNote, line);

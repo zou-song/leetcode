@@ -30,20 +30,24 @@ public:
         {
             int idx = *(iter->second.begin());
             int last_idx = vec.size() - 1;
-            if (idx != last_idx)
+            if (idx == last_idx || vec[idx] == vec[last_idx])
+            {
+                iter->second.erase(last_idx);
+            }
+            else
             {
                 int back_val = vec.back();
                 vec[idx] = back_val;
                 auto last_val_iter = hashmap.find(back_val);
                 last_val_iter->second.erase(last_idx);
                 last_val_iter->second.insert(idx);
+                iter->second.erase(idx);
             }
-            vec.pop_back();
-            iter->second.erase(iter->second.begin());
             if (iter->second.empty())
             {
                 hashmap.erase(iter);
             }
+            vec.pop_back();
             return true;
         }
         return false;
@@ -68,20 +72,16 @@ public:
  * int param_3 = obj->getRandom();
  */
 
+/**
+ * Your RandomizedCollection object will be instantiated and called as such:
+ * RandomizedCollection* obj = new RandomizedCollection();
+ * bool param_1 = obj->insert(val);
+ * bool param_2 = obj->remove(val);
+ * int param_3 = obj->getRandom();
+ */
+
  int main(int argc, char const *argv[])
  {
- 	RandomizedCollection obj;
- 	bool param_1 = obj.insert(0);
- 	bool param_2 = obj.insert(1);
- 	bool param_3 = obj.insert(2);
- 	bool param_4 = obj.insert(3);
- 	bool param_5 = obj.insert(3);
- 	bool param_6 = obj.remove(2);
- 	bool param_7 = obj.remove(3);
- 	bool param_8 = obj.remove(0);
- 	int param_9 = obj.getRandom();
- 	int param_10 = obj.getRandom();
- 	int param_11 = obj.getRandom();
- 	int param_12 = obj.getRandom();
+ 	/*code*/
  	return 0;
  }

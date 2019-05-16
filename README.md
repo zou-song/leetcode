@@ -304,6 +304,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 380  |[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)|  Medium  |
 | 381  |[Insert Delete GetRandom O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/)|  Hard  |
 | 382  |[Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/)|  Medium  |
+| 383  |[Ransom Note](https://leetcode.com/problems/ransom-note/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

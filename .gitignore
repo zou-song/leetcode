@@ -4,3 +4,4 @@ src/**/Makefile
 src/**/lc.h
 *.swp
 *.swo
+core.*

@@ -297,6 +297,7 @@ template<> void walkString(char &s, string &str)
 
 template<> void walkString(string &s, string &str)
 {
+	s.clear();
     trimLeftTrailingSpaces(str);
     trimRightTrailingSpaces(str);
     if (str.empty() || str[0] != '"')

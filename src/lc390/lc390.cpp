@@ -8,20 +8,9 @@ class Solution {
 public:
     int lastRemaining(int n) {
         vector<pair<bool, bool>> tmp;
-        while (n)
+        while (n > 1)
         {
             if (n % 2)
-            {
-                if (tmp.empty() || tmp.back().second == RIGHT)
-                {
-                    tmp.emplace_back(EVEN, LEFT);
-                }
-                else
-                {
-                    tmp.emplace_back(EVEN, RIGHT);
-                }
-            }
-            else
             {
                 if (tmp.empty() || tmp.back().second == RIGHT)
                 {
@@ -30,6 +19,17 @@ public:
                 else
                 {
                     tmp.emplace_back(ODD, RIGHT);
+                }
+            }
+            else
+            {
+                if (tmp.empty() || tmp.back().second == RIGHT)
+                {
+                    tmp.emplace_back(EVEN, LEFT);
+                }
+                else
+                {
+                    tmp.emplace_back(EVEN, RIGHT);
                 }
             }
             n = n / 2;

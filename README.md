@@ -312,6 +312,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 390  |[Elimination Game](https://leetcode.com/problems/elimination-game/)|  Medium  |
 | 392  |[Is Subsequence](https://leetcode.com/problems/is-subsequence/)|  Medium  |
 | 393  |[UTF-8 Validation](https://leetcode.com/problems/utf-8-validation/)|  Medium  |
+| 394  |[Decode String](https://leetcode.com/problems/decode-string/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

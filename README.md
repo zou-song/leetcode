@@ -307,6 +307,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 383  |[Ransom Note](https://leetcode.com/problems/ransom-note/)|  Easy  |
 | 385  |[Mini Parser](https://leetcode.com/problems/mini-parser/)|  Medium  |
 | 387  |[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)|  Easy  |
+| 388  |[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

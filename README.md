@@ -310,6 +310,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 388  |[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/)|  Medium  |
 | 389  |[Find the Difference](https://leetcode.com/problems/find-the-difference/)|  Easy  |
 | 390  |[Elimination Game](https://leetcode.com/problems/elimination-game/)|  Medium  |
+| 392  |[Is Subsequence](https://leetcode.com/problems/is-subsequence/)|  Medium  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |

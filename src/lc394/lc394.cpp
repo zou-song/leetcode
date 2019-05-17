@@ -7,12 +7,17 @@ public:
         int len = s.size();
         int idx = 0;
         int repeated_num = 1;
-        while (idx < 0)
+        while (idx < len)
         {
             if (isdigit(s[idx]))
             {
-                repeated_num = s[idx] - '0';
-                idx++;
+                int end = idx + 1;
+                while (end < len && isdigit(s[end]))
+                {
+                    end++;
+                }
+                repeated_num = stoi(s.substr(idx, end - idx));
+                idx = end;
             }
             else if (s[idx] == '[')
             {

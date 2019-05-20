@@ -318,6 +318,7 @@ Note: all the executable binaries are named "lc", the program input format is th
 | 398  |[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|  Medium  |
 | 399  |[Evaluate Division](https://leetcode.com/problems/evaluate-division/)|  Medium  |
 | 400  |[Nth Digit](https://leetcode.com/problems/nth-digit/)|  Easy  |
+| 401  |[Binary Watch](https://leetcode.com/problems/binary-watch/)|  Easy  |
 | 657  |[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|  Easy  |
 | 832  |[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|  Easy  |
 | 905  |[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)| Easy  |
